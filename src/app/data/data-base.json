@@ -1,0 +1,93 @@
+[
+  {
+    "category": "",
+    "collection": "Star Wars",
+    "number": 501,
+    "name": "Luke Skywalker",
+    "serial": "FAC-053571-22076",
+    "comment": "",
+    "size": 7,
+    "features": ["Bobble-Head", "Glows in the Dark"],
+    "exclusive": true,
+    "stamps": [
+      "Glows in the Dark",
+      "Entertainment Earth Exclusive Limited Edition"
+    ],
+    "image": [
+      {
+        "name": "model-box.jpg",
+        "order": 1
+      },
+      {
+        "name": "model-funko.jpeg",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "category": "Icons",
+    "collection": "Elvira 40 Years",
+    "number": 68,
+    "name": "Elvira",
+    "serial": "GFT210705",
+    "comment": "",
+    "size": 7,
+    "features": [],
+    "exclusive": false,
+    "stamps": ["Diamond Collection"],
+    "image": [
+      {
+        "name": "model-box.jpg",
+        "order": 1
+      },
+      {
+        "name": "model-funko.jpeg",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "category": "",
+    "collection": "Star Wars",
+    "number": 482,
+    "name": "Luke Skywalker with Grogu",
+    "serial": "FAC-053571-21287",
+    "comment": "",
+    "size": 7,
+    "features": ["Bobble-head"],
+    "exclusive": false,
+    "stamps": [],
+    "image": [
+      {
+        "name": "model-box.jpg",
+        "order": 1
+      },
+      {
+        "name": "model-funko.jpeg",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "category": "Animation",
+    "collection": "Samurai Jack",
+    "number": 1052,
+    "name": "Jack (Armored)",
+    "serial": "GFT210805",
+    "comment": "",
+    "size": 7,
+    "features": [],
+    "exclusive": false,
+    "stamps": [],
+    "image": [
+      {
+        "name": "samurai-jack-1052-1.jpg",
+        "order": 1
+      },
+      {
+        "name": "samurai-jack-1052-2.jpeg",
+        "order": 2
+      }
+    ]
+  }
+]

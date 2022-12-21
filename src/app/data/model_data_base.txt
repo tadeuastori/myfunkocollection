@@ -1,0 +1,36 @@
+[
+  {
+    "category": "",
+    "collection": "",
+    "number": null,
+    "name": "",
+    "serial": "",
+    "comment": "",
+    "size": null,
+    "features": ["", ""],
+    "exclusive": false,
+    "stamps": ["", ""],
+    "image": [
+      {
+        "name": "model-box.jpg",
+        "order": 1
+      },
+      {
+        "name": "model-funko.jpeg",
+        "order": 2
+      }
+    ]
+  }
+]
+
+
+
+"pre-filter": [ "categorie", "collection", "size" ]
+
+
+https://www.npmjs.com/package/ng2-search-filter
+https://www.positronx.io/create-search-filter-pipe-in-angular-with-ng2-search-filter/
+
+Best Regards and Have a Great One!!
+                                                                                                         
+Carlos Tadeu G. Astori
