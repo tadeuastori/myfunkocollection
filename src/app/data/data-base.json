@@ -89,5 +89,27 @@
         "order": 2
       }
     ]
+  },
+  {
+    "category": "Keychain",
+    "collection": "What If...?",
+    "number": null,
+    "name": "Zombie Iron Man",
+    "serial": "FAC-053571-21231",
+    "comment": "",
+    "size": 7,
+    "features": ["Bobble-head Keychain"],
+    "exclusive": false,
+    "stamps": [],
+    "image": [
+      {
+        "name": "model-box.jpg",
+        "order": 1
+      },
+      {
+        "name": "model-funko.jpeg",
+        "order": 2
+      }
+    ]
   }
 ]
