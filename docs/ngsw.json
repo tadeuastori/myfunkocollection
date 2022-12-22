@@ -1,0 +1,87 @@
+{
+  "configVersion": 1,
+  "timestamp": 1671750872068,
+  "index": "/myfunkocollection/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/myfunkocollection/favicon.ico",
+        "/myfunkocollection/index.html",
+        "/myfunkocollection/main.ba312655b4acff5d.js",
+        "/myfunkocollection/manifest.webmanifest",
+        "/myfunkocollection/polyfills.ed61ff4638425243.js",
+        "/myfunkocollection/runtime.f53e6d3efcd97360.js",
+        "/myfunkocollection/styles.c93703228c10dc1b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/myfunkocollection/assets/icons/icon-192x192.png",
+        "/myfunkocollection/assets/icons/icon-256x256.png",
+        "/myfunkocollection/assets/icons/icon-384x384.png",
+        "/myfunkocollection/assets/icons/icon-512x512.png",
+        "/myfunkocollection/assets/image/funko/model-box.jpg",
+        "/myfunkocollection/assets/image/funko/model-funko.jpeg",
+        "/myfunkocollection/assets/image/funko/samurai-jack-1052-1.jpg",
+        "/myfunkocollection/assets/image/funko/samurai-jack-1052-2.jpeg",
+        "/myfunkocollection/assets/image/general/maple-funko.png",
+        "/myfunkocollection/assets/image/general/tadeu-funko.png",
+        "/myfunkocollection/assets/image/general/vivi-funko.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/myfunkocollection/assets/icons/icon-192x192.png": "bd8d1ba17f79185c0cf2ca19aa3a7ef6bd2a7b5e",
+    "/myfunkocollection/assets/icons/icon-256x256.png": "6b42379505b64e82c3dc2c10315006c296c398e6",
+    "/myfunkocollection/assets/icons/icon-384x384.png": "3059e9719a1014c07d575f259225f0539ffa1703",
+    "/myfunkocollection/assets/icons/icon-512x512.png": "153f6a48d55c05ffd92f61ff99cfa91e5bab8c25",
+    "/myfunkocollection/assets/image/funko/model-box.jpg": "d272c54a8b1d0fc40b598c08f59002d6d56129a9",
+    "/myfunkocollection/assets/image/funko/model-funko.jpeg": "825720f73438b8dc2d214a70664351e1a7962d29",
+    "/myfunkocollection/assets/image/funko/samurai-jack-1052-1.jpg": "d272c54a8b1d0fc40b598c08f59002d6d56129a9",
+    "/myfunkocollection/assets/image/funko/samurai-jack-1052-2.jpeg": "825720f73438b8dc2d214a70664351e1a7962d29",
+    "/myfunkocollection/assets/image/general/maple-funko.png": "03f07c3c81949b4e2a9cace647760cee13255ff3",
+    "/myfunkocollection/assets/image/general/tadeu-funko.png": "b87a80494282dc8c8038d4aa63f656719e332919",
+    "/myfunkocollection/assets/image/general/vivi-funko.png": "a5ecb40b310abf5d52ddac4feae8f9b0e754c6be",
+    "/myfunkocollection/favicon.ico": "9ca3dc7d6f5c89f04f4a746223e75747491b76ad",
+    "/myfunkocollection/index.html": "e1b417f3215c6eeed06044a52a26b7ab901c5675",
+    "/myfunkocollection/main.ba312655b4acff5d.js": "343b9b55a16df0ee2b483a29b099b632a343656d",
+    "/myfunkocollection/manifest.webmanifest": "19ef14b7a78e7595669b5752b96d191dd7b55b4f",
+    "/myfunkocollection/polyfills.ed61ff4638425243.js": "dabdcc6417f782f31937be653591d86cfd8a13ad",
+    "/myfunkocollection/runtime.f53e6d3efcd97360.js": "7c0467577c8afefd1eb2d9a664bc6be3549392fb",
+    "/myfunkocollection/styles.c93703228c10dc1b.css": "797be10b577a0ac68aca80dfbdda4163604f0016"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
