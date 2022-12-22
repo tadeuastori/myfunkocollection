@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Funko } from '../../models/funko.model';
 
 @Component({
   selector: 'app-funko-detail-painel',

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FunkoDetailPainelComponent } from './funko-detail-painel.component';
+import { FunkoPainelComponent } from './funko-painel.component';
 
-describe('FunkoDetailPainelComponent', () => {
-  let component: FunkoDetailPainelComponent;
-  let fixture: ComponentFixture<FunkoDetailPainelComponent>;
+describe('FunkoPainelComponent', () => {
+  let component: FunkoPainelComponent;
+  let fixture: ComponentFixture<FunkoPainelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FunkoDetailPainelComponent ]
+      declarations: [ FunkoPainelComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FunkoDetailPainelComponent);
+    fixture = TestBed.createComponent(FunkoPainelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

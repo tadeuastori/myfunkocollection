@@ -1,44 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less'],
+  styleUrls: ['./app.component.less']
 })
-export class AppComponent implements OnInit {
-  funkoCollection: any;
-  funkoss = require('./data/data-base.json');
-  searchText: string = '';
-  filteredCount = { count: 0 };
-
-  ngOnInit() {
-    let stringJson = JSON.stringify(this.funkoss);
-    const listFunko: any[] = JSON.parse(stringJson);
-
-    this.funkoCollection = listFunko
-      .sort((a, b) => {
-        const nameA = a.collection.toUpperCase(); // ignore upper and lowercase
-        const nameB = b.collection.toUpperCase(); // ignore upper and lowercase
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
-
-        return 0;
-      })
-      .sort((a, b) => {
-        const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-        const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
-
-        return 0;
-      });
-  }
+export class AppComponent {
+  title = 'myfunkocollection';
 }
