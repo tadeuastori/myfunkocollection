@@ -1,13 +1,14 @@
 {
   "name": "myfunkocollection",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --output-path docs --base-href /myfunkocollection/"
+    "deploy": "ng build --output-path docs --base-href /myfunkocollection/",
+    "prebuild": "npm version patch"
   },
   "private": true,
   "dependencies": {
