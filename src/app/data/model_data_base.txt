@@ -31,6 +31,5 @@
 https://www.npmjs.com/package/ng2-search-filter
 https://www.positronx.io/create-search-filter-pipe-in-angular-with-ng2-search-filter/
 
-Best Regards and Have a Great One!!
-                                                                                                         
-Carlos Tadeu G. Astori
+
+//   "start_url": "https://tadeuastori.github.io/myfunkocollection/",

@@ -85,7 +85,8 @@
       </div>
       <div class="col-3">
         <div class="form-text">Exclusive</div>
-        <label class="form-label">{{ funkoDetails.exclusive }}</label>
+        <label class="form-label" *ngIf="funkoDetails.exclusive">Yes</label>
+        <label class="form-label" *ngIf="!funkoDetails.exclusive">No</label>
       </div>
       <div class="col-7">
         <div class="form-text">Serial</div>

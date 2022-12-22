@@ -1,3 +1,4 @@
+<app-message-add-home-screen></app-message-add-home-screen>
 <div class="page">
   <div class="top">
     <div class="funko-we">
@@ -49,14 +50,14 @@
           </tr>
 
           <!-- modal -->
+          <!-- data-bs-backdrop="static"
+            data-bs-keyboard="false" -->
           <div
             class="modal fade modal-dialog-scrollable"
             id="funkoModal{{ item.number + idx }}"
             tabindex="-1"
             aria-labelledby="funkoModalLabel"
             aria-hidden="true"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
           >
             <div class="modal-dialog">
               <div class="modal-content">
@@ -80,7 +81,7 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-dismiss="modal"
                   >
                     Close

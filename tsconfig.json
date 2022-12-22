@@ -3,6 +3,7 @@
   "compileOnSave": false,
   "include": ["src/**/*.json"],
   "compilerOptions": {
+    "noImplicitAny": false,
     "strictPropertyInitialization": false,
     "resolveJsonModule": true,
     "baseUrl": "./",
