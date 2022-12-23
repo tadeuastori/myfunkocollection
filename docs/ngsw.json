@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1671750872068,
+  "timestamp": 1671815076929,
   "index": "/myfunkocollection/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/myfunkocollection/favicon.ico",
         "/myfunkocollection/index.html",
-        "/myfunkocollection/main.ba312655b4acff5d.js",
+        "/myfunkocollection/main.b55956e5c983563c.js",
         "/myfunkocollection/manifest.webmanifest",
         "/myfunkocollection/polyfills.ed61ff4638425243.js",
         "/myfunkocollection/runtime.f53e6d3efcd97360.js",
-        "/myfunkocollection/styles.c93703228c10dc1b.css"
+        "/myfunkocollection/styles.997c7b99d689c22e.css"
       ],
       "patterns": []
     },
@@ -58,12 +58,12 @@
     "/myfunkocollection/assets/image/general/tadeu-funko.png": "b87a80494282dc8c8038d4aa63f656719e332919",
     "/myfunkocollection/assets/image/general/vivi-funko.png": "a5ecb40b310abf5d52ddac4feae8f9b0e754c6be",
     "/myfunkocollection/favicon.ico": "9ca3dc7d6f5c89f04f4a746223e75747491b76ad",
-    "/myfunkocollection/index.html": "e1b417f3215c6eeed06044a52a26b7ab901c5675",
-    "/myfunkocollection/main.ba312655b4acff5d.js": "343b9b55a16df0ee2b483a29b099b632a343656d",
-    "/myfunkocollection/manifest.webmanifest": "19ef14b7a78e7595669b5752b96d191dd7b55b4f",
+    "/myfunkocollection/index.html": "f7134eab042bc5c706befb5f6f41aa1559d3209c",
+    "/myfunkocollection/main.b55956e5c983563c.js": "f803d6214cbad5edc4c26212b423cc3f968aa53b",
+    "/myfunkocollection/manifest.webmanifest": "7022966cc454712893ba95c005fa5512e4ca8694",
     "/myfunkocollection/polyfills.ed61ff4638425243.js": "dabdcc6417f782f31937be653591d86cfd8a13ad",
     "/myfunkocollection/runtime.f53e6d3efcd97360.js": "7c0467577c8afefd1eb2d9a664bc6be3549392fb",
-    "/myfunkocollection/styles.c93703228c10dc1b.css": "797be10b577a0ac68aca80dfbdda4163604f0016"
+    "/myfunkocollection/styles.997c7b99d689c22e.css": "ffdeb3fee9526e5cf4475e16489fc533cdfb649b"
   },
   "navigationUrls": [
     {

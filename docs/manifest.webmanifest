@@ -3,7 +3,7 @@
   "background_color": "#87CEEB",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://tadeuastori.github.io/myfunkocollection/",
   "name": "My Funko Collection",
   "short_name": "My Funko Collection",
   "icons": [
