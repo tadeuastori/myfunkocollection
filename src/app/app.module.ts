@@ -24,9 +24,13 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
+    // ServiceWorkerModule.register('/ngsw-worker.js', {
+    //   enabled: true,
+    //   // Register the ServiceWorker as soon as the application is stable or after 30 seconds (whichever comes first).
+    //   // registrationStrategy: 'registerImmediately',
+    // }),
+    ServiceWorkerModule.register('/ngsw-worker.js', {
       enabled: environment.production,
-      // Register the ServiceWorker as soon as the application is stable or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
