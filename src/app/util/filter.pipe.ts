@@ -13,9 +13,7 @@ export class FilterPipe implements PipeTransform {
   transform(
     items: any[],
     searchText: string,
-    fieldName: string,
-    fieldNumber: string,
-    fieldCollection: string,
+    fields: string[],
     filteredCount: any
   ): any[] {
     let newList: any[] = [];
@@ -33,33 +31,16 @@ export class FilterPipe implements PipeTransform {
     // convert the searchText to lower case
     searchText = searchText.toLowerCase();
 
-    // retrun the filtered array
-    newList.push(
-      ...items.filter((item) => {
-        if (item && item[fieldNumber]) {
-          return item[fieldNumber].toString().includes(searchText);
-        }
-        return false;
-      })
-    );
-
-    newList.push(
-      ...items.filter((item) => {
-        if (item && item[fieldCollection]) {
-          return item[fieldCollection].toLowerCase().includes(searchText);
-        }
-        return false;
-      })
-    );
-
-    newList.push(
-      ...items.filter((item) => {
-        if (item && item[fieldName]) {
-          return item[fieldName].toLowerCase().includes(searchText);
-        }
-        return false;
-      })
-    );
+    fields.forEach((element) => {
+      newList.push(
+        ...items.filter((item) => {
+          if (item && item[element]) {
+            return item[element].toString().toLowerCase().includes(searchText);
+          }
+          return false;
+        })
+      );
+    });
 
     let listReturn = newList.filter((c, index) => {
       return newList.indexOf(c) === index;
@@ -68,8 +49,8 @@ export class FilterPipe implements PipeTransform {
     filteredCount.count = listReturn.length;
 
     return listReturn.sort((a, b) => {
-      const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-      const nameB = b.name.toUpperCase(); // ignore upper and lowercase
+      const nameA = a.collection.toUpperCase(); // ignore upper and lowercase
+      const nameB = b.collection.toUpperCase(); // ignore upper and lowercase
       if (nameA < nameB) {
         return -1;
       }
@@ -77,7 +58,6 @@ export class FilterPipe implements PipeTransform {
         return 1;
       }
 
-      // names must be equal
       return 0;
     });
   }
