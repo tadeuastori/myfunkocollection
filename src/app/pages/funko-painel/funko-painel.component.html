@@ -31,9 +31,7 @@
             let item of funkoCollection
               | filter
                 : searchText
-                : 'name'
-                : 'number'
-                : 'collection'
+                : ['name', 'number', 'collection', 'comment']
                 : filteredCount;
             index as idx
           "

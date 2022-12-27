@@ -1,23 +1,33 @@
 [
+  {},
   {
-    "category": "",
+    "type": null,
+    "category": null,
     "collection": "",
     "number": null,
     "name": "",
     "serial": "",
-    "comment": "",
+    "comment": null,
     "size": null,
-    "features": ["", ""],
-    "exclusive": false,
-    "stamps": ["", ""],
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
     "image": [
       {
-        "name": "model-box.jpg",
+        "name": "model-01.jpeg",
         "order": 1
       },
       {
-        "name": "model-funko.jpeg",
+        "name": "model-02.jpeg",
         "order": 2
+      },
+      {
+        "name": "model-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "model-04.jpeg",
+        "order": 4
       }
     ]
   }

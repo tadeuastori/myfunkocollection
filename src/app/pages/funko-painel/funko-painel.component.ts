@@ -15,30 +15,17 @@ export class FunkoPainelComponent implements OnInit {
     let stringJson = JSON.stringify(this.funkoss);
     const listFunko: any[] = JSON.parse(stringJson);
 
-    this.funkoCollection = listFunko
-      .sort((a, b) => {
-        const nameA = a.collection.toUpperCase(); // ignore upper and lowercase
-        const nameB = b.collection.toUpperCase(); // ignore upper and lowercase
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
+    this.funkoCollection = listFunko.sort((a, b) => {
+      const nameA = a.collection.toUpperCase(); // ignore upper and lowercase
+      const nameB = b.collection.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
 
-        return 0;
-      })
-      .sort((a, b) => {
-        const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-        const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
-
-        return 0;
-      });
+      return 0;
+    });
   }
 }
