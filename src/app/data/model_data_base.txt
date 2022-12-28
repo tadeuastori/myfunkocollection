@@ -8,7 +8,7 @@
     "name": "",
     "serial": "",
     "comment": null,
-    "size": null,
+    "size": 5,
     "features": [],
     "exclusive": [],
     "stamps": [],
