@@ -1403,7 +1403,7 @@
         "order": 2
       },
       {
-        "name": "moddragon-ball-super-314el-03.jpeg",
+        "name": "dragon-ball-super-314-03.jpeg",
         "order": 3
       },
       {
@@ -2287,7 +2287,7 @@
     "type": null,
     "category": "Games",
     "collection": "Pokemon",
-    "number": 483,
+    "number": 843,
     "name": "Charizard",
     "serial": "DRM220317",
     "comment": null,
@@ -2297,19 +2297,19 @@
     "stamps": [],
     "image": [
       {
-        "name": "pokemon-483-01.jpeg",
+        "name": "pokemon-843-01.jpeg",
         "order": 1
       },
       {
-        "name": "pokemon-483-02.jpeg",
+        "name": "pokemon-843-02.jpeg",
         "order": 2
       },
       {
-        "name": "pokemon-483-03.jpeg",
+        "name": "pokemon-843-03.jpeg",
         "order": 3
       },
       {
-        "name": "pokemon-483-04.jpeg",
+        "name": "pokemon-843-04.jpeg",
         "order": 4
       }
     ]
