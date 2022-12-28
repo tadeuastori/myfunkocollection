@@ -7,8 +7,8 @@ import { FunkoDetailPainelComponent } from './shared/funko-detail-painel/funko-d
 import { FunkoPainelComponent } from './pages/funko-painel/funko-painel.component';
 import { FormsModule } from '@angular/forms';
 import { MessageAddHomeScreenComponent } from './shared/message-add-home-screen/message-add-home-screen.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+// import { ServiceWorkerModule } from '@angular/service-worker';
+// import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -29,10 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
     //   // Register the ServiceWorker as soon as the application is stable or after 30 seconds (whichever comes first).
     //   // registrationStrategy: 'registerImmediately',
     // }),
-    ServiceWorkerModule.register('/ngsw-worker.js', {
-      enabled: environment.production,
-      registrationStrategy: 'registerWhenStable:30000',
-    }),
+    // ServiceWorkerModule.register('/ngsw-worker.js', {
+    //   enabled: environment.production,
+    //   registrationStrategy: 'registerWhenStable:30000',
+    // }),
   ],
   providers: [],
   bootstrap: [AppComponent],

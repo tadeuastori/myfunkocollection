@@ -15,109 +15,103 @@ export class MessageAddHomeScreenComponent implements OnInit {
   showButton = false;
   pwaControl = false;
 
-  @HostListener('window:beforeinstallprompt', ['$event'])
-  onBeforeInstallPrompt(e) {
-    console.log('PWA was available');
-    // Prevent Chrome 67 and earlier from automatically showing the prompt
-    e.preventDefault();
-    // Stash the event so it can be triggered later.
-    this.deferredPrompt = e;
+  // @HostListener('window:beforeinstallprompt', ['$event'])
+  // onBeforeInstallPrompt(e) {
+  //   console.log('PWA was available');
+  //   // Prevent Chrome 67 and earlier from automatically showing the prompt
+  //   e.preventDefault();
+  //   // Stash the event so it can be triggered later.
+  //   this.deferredPrompt = e;
 
-    this.pwaControl = true;
-    this.checkBrowser();
-  }
+  //   this.pwaControl = true;
+  //   this.checkBrowser();
+  // }
 
-  onAppInstalled(e) {
-    this.deferredPrompt = null;
-    console.log('PWA was installed');
+  // onAppInstalled(e) {
+  //   this.deferredPrompt = null;
+  //   console.log('PWA was installed');
 
-    this.pwaControl = true;
-    this.checkBrowser();
-  }
+  //   this.pwaControl = true;
+  //   this.checkBrowser();
+  // }
 
-  constructor(
-    private apiService: ApiService,
-    private deviceService: DeviceDetectorService,
-    private swUpdate: SwUpdate
-  ) {
-    console.log('SwUpdate isEnabled:', this.swUpdate.isEnabled);
-
-    swUpdate.versionUpdates.subscribe((evt) => {
-      console.log('Event Type:', evt.type);
-      switch (evt.type) {
-        case 'VERSION_DETECTED':
-          console.log(`Downloading new app version: ${evt.version.hash}`);
-          break;
-
-        case 'VERSION_READY':
-          console.log(`Current app version: ${evt.currentVersion.hash}`);
-          console.log(
-            `New app version ready for use: ${evt.latestVersion.hash}`
-          );
-          break;
-
-        case 'VERSION_INSTALLATION_FAILED':
-          console.log(
-            `Failed to install app version '${evt.version.hash}': ${evt.error}`
-          );
-          break;
-      }
-    });
-
-    //force update
-    this.swUpdate.versionUpdates.subscribe((e) => {
-      window.location.reload();
-    });
-
-    window.addEventListener(
-      'beforeinstallprompt',
-      this.onBeforeInstallPrompt.bind(this)
-    );
-    window.addEventListener('appinstalled', this.onAppInstalled.bind(this));
+  constructor() // private apiService: ApiService,
+  // private deviceService: DeviceDetectorService,
+  // private swUpdate: SwUpdate
+  {
+    // console.log('SwUpdate isEnabled:', this.swUpdate.isEnabled);
+    // swUpdate.versionUpdates.subscribe((evt) => {
+    //   console.log('Event Type:', evt.type);
+    //   switch (evt.type) {
+    //     case 'VERSION_DETECTED':
+    //       console.log(`Downloading new app version: ${evt.version.hash}`);
+    //       break;
+    //     case 'VERSION_READY':
+    //       console.log(`Current app version: ${evt.currentVersion.hash}`);
+    //       console.log(
+    //         `New app version ready for use: ${evt.latestVersion.hash}`
+    //       );
+    //       break;
+    //     case 'VERSION_INSTALLATION_FAILED':
+    //       console.log(
+    //         `Failed to install app version '${evt.version.hash}': ${evt.error}`
+    //       );
+    //       break;
+    //   }
+    // });
+    // //force update
+    // this.swUpdate.versionUpdates.subscribe((e) => {
+    //   window.location.reload();
+    // });
+    // window.addEventListener(
+    //   'beforeinstallprompt',
+    //   this.onBeforeInstallPrompt.bind(this)
+    // );
+    // window.addEventListener('appinstalled', this.onAppInstalled.bind(this));
   }
 
   ngOnInit() {
-    this.checkBrowser();
-    this.fetchData();
+    // this.checkBrowser();
+    // this.fetchData();
   }
 
   addToHomeScreen() {
-    // hide our user interface that shows our A2HS button
-    this.showButton = false;
-    // Show the prompt
-    this.deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    this.deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-      this.deferredPrompt = null;
-    });
+    // // hide our user interface that shows our A2HS button
+    // this.showButton = false;
+    // // Show the prompt
+    // this.deferredPrompt.prompt();
+    // // Wait for the user to respond to the prompt
+    // this.deferredPrompt.userChoice.then((choiceResult) => {
+    //   if (choiceResult.outcome === 'accepted') {
+    //     console.log('User accepted the A2HS prompt');
+    //   } else {
+    //     console.log('User dismissed the A2HS prompt');
+    //   }
+    //   this.deferredPrompt = null;
+    // });
   }
 
-  fetchData() {
-    this.apiService.fetch().subscribe(
-      (data: Array<Item>) => {
-        // console.log(data);
-        this.items = data;
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
-  }
+  // fetchData() {
+  //   this.apiService.fetch().subscribe(
+  //     (data: Array<Item>) => {
+  //       // console.log(data);
+  //       this.items = data;
+  //     },
+  //     (err) => {
+  //       console.log(err);
+  //     }
+  //   );
+  // }
 
-  checkBrowser() {
-    if (this.pwaControl) {
-      if (this.deviceService.isMobile()) {
-        this.showButton = true;
-      } else {
-        this.showButton = false;
-      }
-    } else {
-      this.showButton = false;
-    }
-  }
+  // checkBrowser() {
+  //   if (this.pwaControl) {
+  //     if (this.deviceService.isMobile()) {
+  //       this.showButton = true;
+  //     } else {
+  //       this.showButton = false;
+  //     }
+  //   } else {
+  //     this.showButton = false;
+  //   }
+  // }
 }
