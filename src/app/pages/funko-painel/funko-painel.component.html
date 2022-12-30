@@ -48,9 +48,6 @@
             <td>{{ item.name }}</td>
           </tr>
 
-          <!-- modal -->
-          <!-- data-bs-backdrop="static"
-            data-bs-keyboard="false" -->
           <div
             class="modal fade modal-dialog-scrollable"
             id="funkoModal{{ item.number.replace(' ', '') + idx }}"
@@ -74,7 +71,7 @@
                 <div class="modal-body">
                   <app-funko-detail-painel
                     [funkoDetails]="item"
-                    [idFunko]="item.number + idx"
+                    [idFunko]="item.number.replace(' ', '') + idx"
                   ></app-funko-detail-painel>
                 </div>
                 <div class="modal-footer">
@@ -89,6 +86,42 @@
               </div>
             </div>
           </div>
+
+          <ng-container *ngFor="let img of item.image; index as idxImg">
+            <div
+              class="modal fade"
+              id="modalImg{{ img.name.replace('.', '').replace('-', '') }}"
+              aria-hidden="true"
+              aria-labelledby="ModalLabel"
+              tabindex="-1"
+              data-bs-backdrop="static"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="ModalLabel">
+                      {{ item.name }}
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-toggle="modal"
+                      aria-label="Close"
+                      attr.data-bs-target="#funkoModal{{
+                        item.number.replace(' ', '') + idx
+                      }}"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="assets/image/funko/{{ img.name }}"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
           <!-- modal -->
         </ng-container>
       </tbody>
