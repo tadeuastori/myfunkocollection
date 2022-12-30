@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1672418189469,
+  "timestamp": 1672420428667,
   "index": "/myfunkocollection/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/myfunkocollection/favicon.ico",
         "/myfunkocollection/index.html",
-        "/myfunkocollection/main.33e53ed18e2ed332.js",
+        "/myfunkocollection/main.7a75aa00c880890a.js",
         "/myfunkocollection/manifest.webmanifest",
         "/myfunkocollection/polyfills.ed61ff4638425243.js",
         "/myfunkocollection/runtime.f53e6d3efcd97360.js",
@@ -876,8 +876,8 @@
     "/myfunkocollection/assets/image/general/tadeu-funko.png": "b87a80494282dc8c8038d4aa63f656719e332919",
     "/myfunkocollection/assets/image/general/vivi-funko.png": "a5ecb40b310abf5d52ddac4feae8f9b0e754c6be",
     "/myfunkocollection/favicon.ico": "9ca3dc7d6f5c89f04f4a746223e75747491b76ad",
-    "/myfunkocollection/index.html": "cc1cb7ad38b0da0cc2af07faa18e0ae41dbb38c9",
-    "/myfunkocollection/main.33e53ed18e2ed332.js": "b7204e0772e18e6296b19cba3d2bf242f43ed2d1",
+    "/myfunkocollection/index.html": "d00f74b5bf785bb6fe6aef53d8c8c700419ea462",
+    "/myfunkocollection/main.7a75aa00c880890a.js": "3f6ed01a9ff33be8b5c82a3338e57285711eedcc",
     "/myfunkocollection/manifest.webmanifest": "7022966cc454712893ba95c005fa5512e4ca8694",
     "/myfunkocollection/polyfills.ed61ff4638425243.js": "dabdcc6417f782f31937be653591d86cfd8a13ad",
     "/myfunkocollection/runtime.f53e6d3efcd97360.js": "7c0467577c8afefd1eb2d9a664bc6be3549392fb",
