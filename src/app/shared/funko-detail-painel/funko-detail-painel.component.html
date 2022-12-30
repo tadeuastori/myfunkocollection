@@ -91,12 +91,12 @@
     <div class="row col-12">
       <div class="col-12" *ngIf="funkoDetails.exclusive.length > 0">
         <div class="form-text">Exclusive</div>
-        <label class="form-label"
-          ><span
-            class="badge text-bg-secondary badge-space"
-            *ngFor="let exclusive of funkoDetails.exclusive"
-            >{{ exclusive }}</span
-          >
+        <label class="form-label">
+          <ng-container *ngFor="let exclusive of funkoDetails.exclusive">
+            <app-funko-detail-exclusive
+              [funkoExclusive]="exclusive"
+            ></app-funko-detail-exclusive>
+          </ng-container>
         </label>
       </div>
     </div>
@@ -115,11 +115,9 @@
     <div class="row col-12" *ngIf="funkoDetails.stamps.length > 0">
       <div class="form-text">Stamps</div>
       <label class="form-label">
-        <span
-          class="badge text-bg-secondary badge-space"
-          *ngFor="let stamp of funkoDetails.stamps"
-          >{{ stamp }}</span
-        >
+        <ng-container *ngFor="let stamp of funkoDetails.stamps">
+          <app-funko-detail-stamp [funkoStamp]="stamp"></app-funko-detail-stamp>
+        </ng-container>
       </label>
     </div>
 

@@ -39,7 +39,9 @@
           <tr
             class="rowFunko"
             data-bs-toggle="modal"
-            attr.data-bs-target="#funkoModal{{ item.number + idx }}"
+            attr.data-bs-target="#funkoModal{{
+              item.number.replace(' ', '') + idx
+            }}"
           >
             <th scope="row">{{ item.number }}</th>
             <td>{{ item.collection }}</td>
@@ -51,7 +53,7 @@
             data-bs-keyboard="false" -->
           <div
             class="modal fade modal-dialog-scrollable"
-            id="funkoModal{{ item.number + idx }}"
+            id="funkoModal{{ item.number.replace(' ', '') + idx }}"
             tabindex="-1"
             aria-labelledby="funkoModalLabel"
             aria-hidden="true"
