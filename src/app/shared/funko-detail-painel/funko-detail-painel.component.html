@@ -114,12 +114,10 @@
 
     <div class="row col-12" *ngIf="funkoDetails.stamps.length > 0">
       <div class="form-text">Stamps</div>
-      <label class="form-label"
-        ><span
-          class="badge text-bg-secondary badge-space"
-          *ngFor="let stamp of funkoDetails.stamps"
-          >{{ stamp }}</span
-        >
+      <label class="form-label">
+        <ng-container *ngFor="let stamp of funkoDetails.stamps">
+          <app-funko-detail-stamp [funkoStamp]="stamp"></app-funko-detail-stamp>
+        </ng-container>
       </label>
     </div>
 
