@@ -11,6 +11,7 @@ import { MessageAddHomeScreenComponent } from './shared/message-add-home-screen/
 // import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 import { FunkoDetailStampComponent } from './shared/funko-detail-stamp/funko-detail-stamp.component';
+import { FunkoDetailExclusiveComponent } from './shared/funko-detail-exclusive/funko-detail-exclusive.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FunkoDetailStampComponent } from './shared/funko-detail-stamp/funko-det
     FilterPipe,
     MessageAddHomeScreenComponent,
     FunkoDetailStampComponent,
+    FunkoDetailExclusiveComponent,
   ],
   imports: [
     BrowserModule,
