@@ -10,6 +10,7 @@ import { MessageAddHomeScreenComponent } from './shared/message-add-home-screen/
 // import { ServiceWorkerModule } from '@angular/service-worker';
 // import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { FunkoDetailExclusiveComponent } from './shared/funko-detail-exclusive/funko-detail-exclusive.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     FunkoPainelComponent,
     FilterPipe,
     MessageAddHomeScreenComponent,
+    FunkoDetailExclusiveComponent,
   ],
   imports: [
     BrowserModule,
