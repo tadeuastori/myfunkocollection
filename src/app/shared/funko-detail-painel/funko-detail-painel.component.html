@@ -103,12 +103,12 @@
 
     <div class="row col-12" *ngIf="funkoDetails.features.length > 0">
       <div class="form-text">Features</div>
-      <label class="form-label"
-        ><span
-          class="badge text-bg-secondary badge-space"
-          *ngFor="let feature of funkoDetails.features"
-          >{{ feature }}</span
-        >
+      <label class="form-label">
+        <ng-container *ngFor="let feature of funkoDetails.features">
+          <app-funko-detail-features
+            [funkoFeature]="feature"
+          ></app-funko-detail-features>
+        </ng-container>
       </label>
     </div>
 
