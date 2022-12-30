@@ -31,6 +31,10 @@
               'carousel-item active': isFirst,
               'carousel-item': true
             }"
+            attr.data-bs-target="#modalImg{{
+              imagem.name.replace('.', '').replace('-', '')
+            }}"
+            data-bs-toggle="modal"
           >
             <img src="assets/image/funko/{{ imagem.name }}" class="d-block" />
           </div>
