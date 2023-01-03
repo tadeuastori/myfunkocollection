@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FunkoDetailFeaturesComponent } from './shared/funko-detail-features/funko-detail-features.component';
 import { FunkoDetailStampComponent } from './shared/funko-detail-stamp/funko-detail-stamp.component';
 import { FunkoDetailExclusiveComponent } from './shared/funko-detail-exclusive/funko-detail-exclusive.component';
+import { PaginationPipe } from './util/pagination.pipe';
+import { FunkoPainelPaginationComponent } from './shared/funko-painel-pagination/funko-painel-pagination.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { FunkoDetailExclusiveComponent } from './shared/funko-detail-exclusive/f
     FunkoDetailPainelComponent,
     FunkoPainelComponent,
     FilterPipe,
+    PaginationPipe,
     MessageAddHomeScreenComponent,
     FunkoDetailFeaturesComponent,
     FunkoDetailStampComponent,
     FunkoDetailExclusiveComponent,
+    FunkoPainelPaginationComponent,
   ],
   imports: [
     BrowserModule,
