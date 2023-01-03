@@ -29,7 +29,6 @@ export class FunkoPainelPaginationComponent implements OnInit, OnChanges {
       Math.round(this.funkosLength / this.itemsPerPage)
     );
     this.totalPages = this.totalPages == 0 ? 1 : this.totalPages;
-
     this.lastPage = this.totalPages - 1;
 
     this.pages = Array(6)
@@ -48,7 +47,7 @@ export class FunkoPainelPaginationComponent implements OnInit, OnChanges {
     );
 
     this.totalPages = this.totalPages == 0 ? 1 : this.totalPages;
-
+    this.activePage = 0;
     this.lastPage = this.totalPages - 1;
     const qtdarray = this.totalPages < 6 ? this.totalPages + 1 : 6;
 
