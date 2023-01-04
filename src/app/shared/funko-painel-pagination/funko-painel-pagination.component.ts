@@ -17,65 +17,47 @@ export class FunkoPainelPaginationComponent implements OnInit, OnChanges {
 
   activePage = 0;
   pages: any;
-
+  qtdBaseArray = 5;
   totalPages;
   lastPage;
-  firstPage = 1;
+  firstPage = 0;
 
   constructor() {}
 
-  /**
-   * ! bug - Math.ceil is round down every time. because of it, I add +1 in the final result
-   */
-  ngOnInit(): void {
-    this.totalPages =
-      Math.ceil(Math.round(this.funkosLength / this.itemsPerPage)) + 1;
-    this.totalPages = this.totalPages == 0 ? 1 : this.totalPages;
-    this.lastPage = this.totalPages - 1;
+  async ngOnInit(): Promise<void> {
+    await this.loadPagination();
+  }
 
-    this.pages = Array(6)
-      .fill(0)
-      .map((_x, i) => i);
-    this.pages.pop();
+  async ngOnChanges(changes: SimpleChanges): Promise<void> {
+    await this.loadPagination();
   }
 
   get currentPage() {
     return this.activePage;
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    this.totalPages =
-      Math.ceil(Math.round(this.funkosLength / this.itemsPerPage)) + 1;
-
+  async loadPagination(page: any = null) {
+    this.totalPages = Math.ceil(this.funkosLength / this.itemsPerPage);
     this.totalPages = this.totalPages == 0 ? 1 : this.totalPages;
-    this.activePage = 0;
     this.lastPage = this.totalPages - 1;
-    const qtdarray = this.totalPages < 6 ? this.totalPages + 1 : 6;
+    this.activePage = page ? page : 0;
+    let qtdArray = this.qtdBaseArray;
+    let numbPag = 0;
 
-    this.pages = Array(qtdarray)
-      .fill(0)
-      .map((_x, i) => i);
-    this.pages.pop();
-  }
-
-  changePages(page: number) {
-    this.activePage = page;
-
-    if (this.totalPages > 5 && page + 1 > 3) {
-      const totalArray = this.totalPages - (page + 1);
-      const numbPag = totalArray >= 2 ? page - 2 : this.totalPages - 5;
-
-      this.pages = Array(6)
-        .fill(0)
-        .map((_x, i) => i + numbPag);
-      this.pages.pop();
+    if (page && this.totalPages > this.qtdBaseArray && page > 2) {
+      const totalArray = this.totalPages - page;
+      numbPag = totalArray > 2 ? page - 2 : this.totalPages - this.qtdBaseArray;
+      qtdArray = this.qtdBaseArray;
     } else {
-      const qtdarray = this.totalPages < 6 ? this.totalPages + 1 : 6;
-
-      this.pages = Array(qtdarray)
-        .fill(0)
-        .map((_x, i) => i);
-      this.pages.pop();
+      qtdArray =
+        this.totalPages < this.qtdBaseArray
+          ? this.totalPages
+          : this.qtdBaseArray;
     }
+
+    this.pages = Array(qtdArray + 1)
+      .fill(0)
+      .map((_x, i) => i + numbPag);
+    this.pages.pop();
   }
 }

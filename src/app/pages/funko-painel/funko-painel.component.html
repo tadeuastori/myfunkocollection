@@ -33,7 +33,7 @@
                 : searchText
                 : ['name', 'number', 'collection', 'comment']
                 : filteredCount
-              | pagination : itemsPerPage : paginator.currentPage;
+              | pagination : itemsPage.perPage : paginator.currentPage;
             index as idx
           "
         >
@@ -131,30 +131,13 @@
           <td colspan="3">
             <app-funko-painel-pagination
               [funkosLength]="filteredCount.count"
-              [itemsPerPage]="itemsPerPage"
+              [itemsPerPage]="itemsPage.perPage"
               #paginator
             ></app-funko-painel-pagination>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <div class="form-floating" *ngIf="filteredCount.count != 0">
-              <select
-                class="form-select"
-                id="floatingSelect"
-                aria-label="Floating label select example"
-                [(ngModel)]="itemsPerPage"
-              >
-                <option
-                  *ngFor="let items of itamsPerPageArray"
-                  [ngValue]="items"
-                >
-                  {{ items }}
-                </option>
-                <option value="{{ filteredCount.count }}">All Items</option>
-              </select>
-              <label for="floatingSelect">Items per page</label>
-            </div>
+            <app-funko-painel-items-per-page
+              [totalItems]="filteredCount.count"
+              #itemsPage
+            ></app-funko-painel-items-per-page>
           </td>
         </tr>
       </tfoot>

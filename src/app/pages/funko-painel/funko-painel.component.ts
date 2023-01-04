@@ -10,8 +10,7 @@ export class FunkoPainelComponent implements OnInit, OnChanges {
   funkoss = require('../../data/data-base.json');
   searchText: string = '';
   filteredCount = { count: 0 };
-  itemsPerPage = 5;
-  itamsPerPageArray = [5, 15, 25, 50];
+  total;
 
   ngOnInit() {
     let stringJson = JSON.stringify(this.funkoss);
@@ -32,9 +31,8 @@ export class FunkoPainelComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.filteredCount.count);
-    if (this.filteredCount.count < 5) {
-      this.itamsPerPageArray = [this.filteredCount.count];
-    }
+    // if (this.filteredCount.count < 50) {
+    //   this.itemsArray = [this.filteredCount.count];
+    // }
   }
 }
