@@ -24,10 +24,12 @@ export class FunkoPainelPaginationComponent implements OnInit, OnChanges {
 
   constructor() {}
 
+  /**
+   * ! bug - Math.ceil is round down every time. because of it, I add +1 in the final result
+   */
   ngOnInit(): void {
-    this.totalPages = Math.ceil(
-      Math.round(this.funkosLength / this.itemsPerPage)
-    );
+    this.totalPages =
+      Math.ceil(Math.round(this.funkosLength / this.itemsPerPage)) + 1;
     this.totalPages = this.totalPages == 0 ? 1 : this.totalPages;
     this.lastPage = this.totalPages - 1;
 
@@ -42,9 +44,8 @@ export class FunkoPainelPaginationComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.totalPages = Math.ceil(
-      Math.round(this.funkosLength / this.itemsPerPage)
-    );
+    this.totalPages =
+      Math.ceil(Math.round(this.funkosLength / this.itemsPerPage)) + 1;
 
     this.totalPages = this.totalPages == 0 ? 1 : this.totalPages;
     this.activePage = 0;

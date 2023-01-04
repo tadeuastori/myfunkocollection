@@ -11,7 +11,7 @@ export class FunkoPainelComponent implements OnInit, OnChanges {
   searchText: string = '';
   filteredCount = { count: 0 };
   itemsPerPage = 5;
-  itamsPerPageArray = [5, 15, 25];
+  itamsPerPageArray = [5, 15, 25, 50];
 
   ngOnInit() {
     let stringJson = JSON.stringify(this.funkoss);

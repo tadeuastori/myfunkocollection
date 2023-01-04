@@ -63,17 +63,17 @@
 
   <div class="funko-details">
     <div class="row col-12">
-      <div class="col-6">
+      <div class="col-3">
+        <div class="form-text">Type</div>
+        <label class="form-label">{{ funkoDetails.type }}</label>
+      </div>
+      <div class="col-5">
         <div class="form-text">Category</div>
         <label class="form-label">{{ funkoDetails.category }}</label>
       </div>
       <div class="col-4">
         <div class="form-text">Number</div>
         <label class="form-label">{{ funkoDetails.number }}</label>
-      </div>
-      <div class="col-2">
-        <div class="form-text">Size</div>
-        <label class="form-label">{{ funkoDetails.size }}'</label>
       </div>
     </div>
 
@@ -88,24 +88,35 @@
     </div>
 
     <div class="row col-12">
-      <div class="form-text">Serial</div>
-      <label class="form-label">{{ funkoDetails.serial }}</label>
-    </div>
+      <div class="col-3">
+        <div class="form-text">Box with</div>
+        <label class="form-label">{{ funkoDetails.pack }}</label>
+      </div>
 
-    <div class="row col-12">
-      <div class="col-12" *ngIf="funkoDetails.exclusive.length > 0">
-        <div class="form-text">Exclusive</div>
-        <label class="form-label">
-          <ng-container *ngFor="let exclusive of funkoDetails.exclusive">
-            <app-funko-detail-exclusive
-              [funkoExclusive]="exclusive"
-            ></app-funko-detail-exclusive>
-          </ng-container>
-        </label>
+      <div class="col-2">
+        <div class="form-text">Size</div>
+        <label class="form-label">{{ funkoDetails.size }}'</label>
+      </div>
+
+      <div class="col-7">
+        <div class="form-text">Serial</div>
+        <label class="form-label">{{ funkoDetails.serial }}</label>
       </div>
     </div>
 
-    <div class="row col-12" *ngIf="funkoDetails.features.length > 0">
+    <div class="row col-12">
+      <div class="form-text">Exclusive</div>
+      <label class="form-label">
+        <ng-container *ngFor="let exclusive of funkoDetails.exclusive">
+          <app-funko-detail-exclusive
+            [funkoExclusive]="exclusive"
+          ></app-funko-detail-exclusive>
+        </ng-container>
+        <span *ngIf="funkoDetails.exclusive.length == 0">No</span>
+      </label>
+    </div>
+
+    <div class="row col-12">
       <div class="form-text">Features</div>
       <label class="form-label">
         <ng-container *ngFor="let feature of funkoDetails.features">
@@ -113,19 +124,21 @@
             [funkoFeature]="feature"
           ></app-funko-detail-features>
         </ng-container>
+        <span *ngIf="funkoDetails.features.length == 0">No</span>
       </label>
     </div>
 
-    <div class="row col-12" *ngIf="funkoDetails.stamps.length > 0">
+    <div class="row col-12">
       <div class="form-text">Stamps</div>
       <label class="form-label">
         <ng-container *ngFor="let stamp of funkoDetails.stamps">
           <app-funko-detail-stamp [funkoStamp]="stamp"></app-funko-detail-stamp>
         </ng-container>
+        <span *ngIf="funkoDetails.stamps.length == 0">No</span>
       </label>
     </div>
 
-    <div class="row col-12" *ngIf="funkoDetails.comment">
+    <div class="row col-12">
       <div class="form-text">Comment</div>
       <label class="form-label">{{ funkoDetails.comment }}</label>
     </div>
