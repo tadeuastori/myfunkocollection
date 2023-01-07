@@ -3312,5 +3312,293 @@
         "order": 3
       }
     ]
+  },
+  {
+    "type": null,
+    "category": "Movies",
+    "collection": "Dumb and Dumber",
+    "number": "1039",
+    "name": "Lloyd Christmas in Tux",
+    "serial": "DRM201015",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dumb-and-dumber-1039-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "dumb-and-dumber-1039-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "dumb-and-dumber-1039-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "dumb-and-dumber-1039-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": null,
+    "collection": "Star Wars",
+    "number": "365",
+    "name": "Darth Vader in Meditation Chamber",
+    "serial": "FAC-053571-20044",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": ["Bobble-Head"],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "star-wars-365-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "star-wars-365-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "star-wars-365-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "star-wars-365-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": "Animation",
+    "collection": "Dragon Ball Z",
+    "number": "859",
+    "name": "Shenron",
+    "serial": "DRM200917",
+    "comment": "Shenlong",
+    "pack": 1,
+    "size": 10,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dragon-ball-z-859-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "dragon-ball-z-859-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "dragon-ball-z-859-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "dragon-ball-z-859-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": null,
+    "collection": "Villains",
+    "number": "1081",
+    "name": "Captain Hook",
+    "serial": "FAC-053571-22111",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "villains-1081-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "villains-1081-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "villains-1081-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "villains-1081-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": "Royals",
+    "collection": "The Royal Family",
+    "number": "01",
+    "name": "Queen Elizabeth II",
+    "serial": "FM 220926",
+    "comment": null,
+    "pack": 2,
+    "size": 5,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "royal-family-01-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "royal-family-01-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "royal-family-01-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "royal-family-01-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": "Movies",
+    "collection": "Dumb and Dumber",
+    "number": "1042",
+    "name": "Harry Dunne Getting a Haircut",
+    "serial": "DRM201015",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dumb-and-dumber-1042-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "dumb-and-dumber-1042-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "dumb-and-dumber-1042-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "dumb-and-dumber-1042-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": null,
+    "collection": "Marvel",
+    "number": "1057",
+    "name": "J. Jonah Jameson",
+    "serial": "TTC220404",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": ["Bobble-Head"],
+    "exclusive": ["Entertainment Earth"],
+    "stamps": ["Special Edition"],
+    "image": [
+      {
+        "name": "marvel-1057-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "marvel-1057-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "marvel-1057-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "marvel-1057-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": "Movies",
+    "collection": "Halloween",
+    "number": "1156",
+    "name": "Michael Myers",
+    "serial": "TTC220505",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "halloween-1156-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "halloween-1156-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "halloween-1156-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "halloween-1156-04.jpeg",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "type": null,
+    "category": null,
+    "collection": "Star Wars",
+    "number": "402",
+    "name": "The Mandalorian with The Child",
+    "serial": "FAC-053571-22069",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": ["Bobble-Head"],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "star-wars-402-01.jpeg",
+        "order": 1
+      },
+      {
+        "name": "star-wars-402-02.jpeg",
+        "order": 2
+      },
+      {
+        "name": "star-wars-402-03.jpeg",
+        "order": 3
+      },
+      {
+        "name": "star-wars-402-04.jpeg",
+        "order": 4
+      }
+    ]
   }
 ]
