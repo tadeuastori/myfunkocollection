@@ -8,7 +8,9 @@
       <div class="carousel-indicators">
         <ng-container
           *ngFor="
-            let imagem of funkoDetails.image;
+            let imagem of [].constructor(
+              funkoDetails.image.length > 0 ? funkoDetails.image.length : 2
+            );
             first as isFirst;
             index as idx
           "
@@ -24,7 +26,12 @@
       </div>
       <div class="carousel-inner">
         <ng-container
-          *ngFor="let imagem of funkoDetails.image; first as isFirst"
+          *ngFor="
+            let imagem of funkoDetails.image.length > 0
+              ? funkoDetails.image
+              : imageModel;
+            first as isFirst
+          "
         >
           <div
             [ngClass]="{
@@ -36,7 +43,16 @@
             }}"
             data-bs-toggle="modal"
           >
-            <img src="assets/image/funko/{{ imagem.name }}" class="d-block" />
+            <img
+              *ngIf="funkoDetails.image.length > 0"
+              src="assets/image/funko/{{ imagem.name }}"
+              class="d-block"
+            />
+            <img
+              *ngIf="funkoDetails.image.length == 0"
+              src="assets/image/funko/model/{{ imagem.name }}"
+              class="d-block"
+            />
           </div>
         </ng-container>
       </div>
