@@ -1,0 +1,107 @@
+<div
+  id="carouselFunko{{ idFunko + prefix }}"
+  class="carousel slide carousel-dark"
+  data-bs-ride="true"
+>
+  <div class="carousel-indicators">
+    <ng-container
+      *ngFor="
+        let imagem of [].constructor(
+          funkoImages.length > 0 ? funkoImages.length : 2
+        );
+        first as isFirst;
+        index as idx
+      "
+    >
+      <button
+        type="button"
+        attr.data-bs-target="#carouselFunko{{ idFunko + prefix }}"
+        attr.data-bs-slide-to="{{ idx }}"
+        attr.aria-label="Slide {{ idx }}"
+        [ngClass]="{ active: isFirst }"
+      ></button>
+    </ng-container>
+  </div>
+  <div class="carousel-inner">
+    <ng-container
+      *ngFor="
+        let imagem of funkoImages.length > 0 ? funkoImages : imageModel;
+        first as isFirst
+      "
+    >
+      <div
+        *ngIf="!imgSelected"
+        [ngClass]="{
+          'carousel-item active':
+            (imgSelected && imgSelected === imagem.name) || isFirst,
+          'carousel-item': true
+        }"
+        attr.data-bs-target="#modalImg{{ idFunko }}"
+        data-bs-toggle="modal"
+      >
+        <img
+          *ngIf="funkoImages.length > 0"
+          src="assets/image/funko/{{ imagem.name }}"
+          [ngClass]="{
+            'img-fluid': prefix,
+            'imgSize d-block': !prefix
+          }"
+        />
+        <img
+          *ngIf="funkoImages.length == 0"
+          src="assets/image/funko/model/{{ imagem.name }}"
+          [ngClass]="{
+            'img-fluid': prefix,
+            'imgSize d-block': !prefix
+          }"
+        />
+      </div>
+
+      <div
+        *ngIf="imgSelected"
+        [ngClass]="{
+          'carousel-item active':
+            (imgSelected && imgSelected === imagem.name) || isFirst,
+          'carousel-item': true
+        }"
+        (click)="setImage(imagem.name)"
+        data-bs-interval="100000"
+      >
+        <img
+          *ngIf="funkoImages.length > 0"
+          src="assets/image/funko/{{ imagem.name }}"
+          [ngClass]="{
+            'img-fluid': prefix,
+            'imgSize d-block': !prefix
+          }"
+        />
+        <img
+          *ngIf="funkoImages.length == 0"
+          src="assets/image/funko/model/{{ imagem.name }}"
+          [ngClass]="{
+            'img-fluid': prefix,
+            'imgSize d-block': !prefix
+          }"
+        />
+      </div>
+    </ng-container>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    attr.data-bs-target="#carouselFunko{{ idFunko + prefix }}"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    attr.data-bs-target="#carouselFunko{{ idFunko + prefix }}"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

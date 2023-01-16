@@ -7,8 +7,8 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class FunkoPainelItemsPerPageComponent implements OnInit, OnChanges {
   @Input() totalItems: number;
-  itemsPerPage = 5;
-  itemsArray = [5, 15, 25, 50];
+  itemsPerPage = 10;
+  itemsArray = [10, 15, 25, 50];
 
   constructor() {}
 

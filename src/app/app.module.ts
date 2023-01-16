@@ -16,6 +16,7 @@ import { FunkoDetailExclusiveComponent } from './shared/funko-detail-exclusive/f
 import { PaginationPipe } from './util/pagination.pipe';
 import { FunkoPainelPaginationComponent } from './shared/funko-painel-pagination/funko-painel-pagination.component';
 import { FunkoPainelItemsPerPageComponent } from './shared/funko-painel-items-per-page/funko-painel-items-per-page.component';
+import { FunkoImageCarouselComponent } from './shared/funko-image-carousel/funko-image-carousel.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FunkoPainelItemsPerPageComponent } from './shared/funko-painel-items-pe
     FunkoDetailExclusiveComponent,
     FunkoPainelPaginationComponent,
     FunkoPainelItemsPerPageComponent,
+    FunkoImageCarouselComponent,
   ],
   imports: [
     BrowserModule,
