@@ -1,122 +1,51 @@
 <div class="funko-panel">
   <div class="funko-image">
-    <div
-      id="carouselFunko{{ idFunko }}"
-      class="carousel slide carousel-dark"
-      data-bs-ride="true"
-    >
-      <div class="carousel-indicators">
-        <ng-container
-          *ngFor="
-            let imagem of [].constructor(
-              funkoDetails.image.length > 0 ? funkoDetails.image.length : 2
-            );
-            first as isFirst;
-            index as idx
-          "
-        >
-          <button
-            type="button"
-            attr.data-bs-target="#carouselFunko{{ idFunko }}"
-            attr.data-bs-slide-to="{{ idx }}"
-            attr.aria-label="Slide {{ idx }}"
-            [ngClass]="{ active: isFirst }"
-          ></button>
-        </ng-container>
-      </div>
-      <div class="carousel-inner">
-        <ng-container
-          *ngFor="
-            let imagem of funkoDetails.image.length > 0
-              ? funkoDetails.image
-              : imageModel;
-            first as isFirst
-          "
-        >
-          <div
-            [ngClass]="{
-              'carousel-item active': isFirst,
-              'carousel-item': true
-            }"
-            attr.data-bs-target="#modalImg{{
-              imagem.name.replace('.', '').replace('-', '')
-            }}"
-            data-bs-toggle="modal"
-          >
-            <img
-              *ngIf="funkoDetails.image.length > 0"
-              src="assets/image/funko/{{ imagem.name }}"
-              class="d-block"
-            />
-            <img
-              *ngIf="funkoDetails.image.length == 0"
-              src="assets/image/funko/model/{{ imagem.name }}"
-              class="d-block"
-            />
-          </div>
-        </ng-container>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        attr.data-bs-target="#carouselFunko{{ idFunko }}"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        attr.data-bs-target="#carouselFunko{{ idFunko }}"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    <app-funko-image-carousel
+      [funkoImages]="funkoDetails.image"
+      [idFunko]="idFunko"
+    ></app-funko-image-carousel>
   </div>
 
   <div class="funko-details">
     <div class="row col-12">
       <div class="col-3">
         <div class="form-text">Type</div>
-        <label class="form-label">{{ funkoDetails.type }}</label>
+        <label class="form-label text">{{ funkoDetails.type }}</label>
       </div>
-      <div class="col-5">
+      <div class="col-5 separate">
         <div class="form-text">Category</div>
-        <label class="form-label">{{ funkoDetails.category }}</label>
+        <label class="form-label text">{{ funkoDetails.category }}</label>
       </div>
-      <div class="col-4">
+      <div class="col-4 separate">
         <div class="form-text">Number</div>
-        <label class="form-label">{{ funkoDetails.number }}</label>
+        <label class="form-label text">{{ funkoDetails.number }}</label>
       </div>
     </div>
 
     <div class="row col-12">
       <div class="form-text">Collection</div>
-      <label class="form-label">{{ funkoDetails.collection }}</label>
+      <label class="form-label text">{{ funkoDetails.collection }}</label>
     </div>
 
     <div class="row col-12">
       <div class="form-text">Name</div>
-      <label class="form-label">{{ funkoDetails.name }}</label>
+      <label class="form-label text">{{ funkoDetails.name }}</label>
     </div>
 
     <div class="row col-12">
       <div class="col-3">
         <div class="form-text">Box with</div>
-        <label class="form-label">{{ funkoDetails.pack }}</label>
+        <label class="form-label text">{{ funkoDetails.pack }}</label>
       </div>
 
-      <div class="col-2">
+      <div class="col-3 separate">
         <div class="form-text">Size</div>
-        <label class="form-label">{{ funkoDetails.size }}'</label>
+        <label class="form-label text">{{ funkoDetails.size }}'</label>
       </div>
 
-      <div class="col-7">
+      <div class="col-6 separate">
         <div class="form-text">Serial</div>
-        <label class="form-label">{{ funkoDetails.serial }}</label>
+        <label class="form-label text">{{ funkoDetails.serial }}</label>
       </div>
     </div>
 
@@ -128,7 +57,11 @@
             [funkoExclusive]="exclusive"
           ></app-funko-detail-exclusive>
         </ng-container>
-        <span *ngIf="funkoDetails.exclusive.length == 0">No</span>
+        <span
+          class="badge text-bg-light badge-space"
+          *ngIf="funkoDetails.exclusive.length == 0"
+          >No</span
+        >
       </label>
     </div>
 
@@ -140,7 +73,11 @@
             [funkoFeature]="feature"
           ></app-funko-detail-features>
         </ng-container>
-        <span *ngIf="funkoDetails.features.length == 0">No</span>
+        <span
+          class="badge text-bg-light badge-space"
+          *ngIf="funkoDetails.features.length == 0"
+          >No</span
+        >
       </label>
     </div>
 
@@ -150,13 +87,17 @@
         <ng-container *ngFor="let stamp of funkoDetails.stamps">
           <app-funko-detail-stamp [funkoStamp]="stamp"></app-funko-detail-stamp>
         </ng-container>
-        <span *ngIf="funkoDetails.stamps.length == 0">No</span>
+        <span
+          class="badge text-bg-light badge-space"
+          *ngIf="funkoDetails.stamps.length == 0"
+          >No</span
+        >
       </label>
     </div>
 
     <div class="row col-12">
       <div class="form-text">Comment</div>
-      <label class="form-label">{{ funkoDetails.comment }}</label>
+      <label class="form-label text">{{ funkoDetails.comment }} &nbsp;</label>
     </div>
   </div>
 </div>

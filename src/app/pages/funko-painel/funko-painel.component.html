@@ -88,41 +88,47 @@
             </div>
           </div>
 
-          <ng-container *ngFor="let img of item.image; index as idxImg">
-            <div
-              class="modal fade"
-              id="modalImg{{ img.name.replace('.', '').replace('-', '') }}"
-              aria-hidden="true"
-              aria-labelledby="ModalLabel"
-              tabindex="-1"
-              data-bs-backdrop="static"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="ModalLabel">
-                      {{ item.name }}
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-toggle="modal"
-                      aria-label="Close"
-                      attr.data-bs-target="#funkoModal{{
-                        item.number.replace(' ', '') + idx
-                      }}"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <img
+          <!-- <ng-container *ngFor="let img of item.image; index as idxImg"> -->
+          <div
+            class="modal fade"
+            id="modalImg{{ item.number.replace(' ', '') + idx }}"
+            aria-hidden="true"
+            aria-labelledby="ModalLabel"
+            tabindex="-1"
+            data-bs-backdrop="static"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="ModalLabel">
+                    {{ item.name }}
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-toggle="modal"
+                    aria-label="Close"
+                    attr.data-bs-target="#funkoModal{{
+                      item.number.replace(' ', '') + idx
+                    }}"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <!-- <img
                       src="assets/image/funko/{{ img.name }}"
                       class="img-fluid"
-                    />
-                  </div>
+                    /> -->
+
+                  <app-funko-image-carousel
+                    [funkoImages]="item.image"
+                    [idFunko]="item.number.replace(' ', '') + idx"
+                    [fromPage]="'painel'"
+                  ></app-funko-image-carousel>
                 </div>
               </div>
             </div>
-          </ng-container>
+          </div>
+          <!-- </ng-container> -->
           <!-- modal -->
         </ng-container>
       </tbody>
