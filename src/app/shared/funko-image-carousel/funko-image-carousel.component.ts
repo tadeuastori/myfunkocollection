@@ -5,6 +5,7 @@ import {
   OnInit,
   SimpleChanges,
 } from '@angular/core';
+import { ImageModelBase64Enum } from '../../data/image-model-base-64.enum';
 
 @Component({
   selector: 'app-funko-image-carousel',
@@ -16,13 +17,17 @@ export class FunkoImageCarouselComponent implements OnInit, OnChanges {
   @Input() idFunko: number;
   @Input() fromPage: string;
 
+  useBase64: boolean = true;
+
   imageModel = [
     {
-      name: 'model-box.jpg',
+      name: 'model-box.jpeg',
+      base64: ImageModelBase64Enum.ModelBox,
       order: 1,
     },
     {
       name: 'model-funko.jpeg',
+      base64: ImageModelBase64Enum.ModelFunko,
       order: 2,
     },
   ];
@@ -32,9 +37,7 @@ export class FunkoImageCarouselComponent implements OnInit, OnChanges {
   imgSelected;
 
   constructor() {}
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('teste');
-  }
+  ngOnChanges(changes: SimpleChanges): void {}
 
   ngOnInit(): void {
     this.prefix = this.fromPage === 'painel' ? 'Img' : null;
@@ -43,5 +46,20 @@ export class FunkoImageCarouselComponent implements OnInit, OnChanges {
 
   setImage(img: string) {
     this.currentImage = img;
+  }
+
+  imageToDisplay(item: any) {
+    let returnImage = '';
+
+    if (!this.useBase64) {
+      returnImage =
+        'assets/image/funko/' +
+        (this.funkoImages.length == 0 ? 'model/' : '') +
+        item.name;
+    } else {
+      returnImage = 'data:image/jpeg;base64,' + item.base64;
+    }
+
+    return returnImage;
   }
 }

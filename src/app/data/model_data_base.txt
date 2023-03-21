@@ -16,18 +16,22 @@
     "image": [
       {
         "name": "model-01.jpeg",
+        "base64": "",
         "order": 1
       },
       {
         "name": "model-02.jpeg",
+        "base64": "",
         "order": 2
       },
       {
         "name": "model-03.jpeg",
+        "base64": "",
         "order": 3
       },
       {
         "name": "model-04.jpeg",
+        "base64": "",
         "order": 4
       }
     ]

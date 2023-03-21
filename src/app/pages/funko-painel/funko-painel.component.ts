@@ -7,7 +7,7 @@ import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 })
 export class FunkoPainelComponent implements OnInit, OnChanges {
   funkoCollection: any;
-  funkoss = require('../../data/data-base.json');
+  funkoss = require('../../data/data-base-new.json');
   searchText: string = '';
   filteredCount = { count: 0 };
   total;
