@@ -17,17 +17,17 @@ export class FunkoImageCarouselComponent implements OnInit, OnChanges {
   @Input() idFunko: number;
   @Input() fromPage: string;
 
-  useBase64: boolean = true;
+  useBase64: boolean = false;
 
   imageModel = [
     {
       name: 'model-box.jpeg',
-      base64: ImageModelBase64Enum.ModelBox,
+      base64: null,
       order: 1,
     },
     {
       name: 'model-funko.jpeg',
-      base64: ImageModelBase64Enum.ModelFunko,
+      base64: null,
       order: 2,
     },
   ];
