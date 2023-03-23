@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1673839351570,
+  "timestamp": 1679595507756,
   "index": "/myfunkocollection/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/myfunkocollection/favicon.ico",
         "/myfunkocollection/index.html",
-        "/myfunkocollection/main.edb5d57840f21376.js",
+        "/myfunkocollection/main.e1abdc8b1cebdd84.js",
         "/myfunkocollection/manifest.webmanifest",
         "/myfunkocollection/polyfills.ed61ff4638425243.js",
         "/myfunkocollection/runtime.f53e6d3efcd97360.js",
@@ -269,7 +269,7 @@
         "/myfunkocollection/assets/image/funko/mermaid-568-02.jpeg",
         "/myfunkocollection/assets/image/funko/mermaid-568-03.jpeg",
         "/myfunkocollection/assets/image/funko/mermaid-568-04.jpeg",
-        "/myfunkocollection/assets/image/funko/model/model-box.jpg",
+        "/myfunkocollection/assets/image/funko/model/model-box.jpeg",
         "/myfunkocollection/assets/image/funko/model/model-funko.jpeg",
         "/myfunkocollection/assets/image/funko/my-hero-academia-1011-01.jpeg",
         "/myfunkocollection/assets/image/funko/my-hero-academia-1011-02.jpeg",
@@ -731,7 +731,7 @@
     "/myfunkocollection/assets/image/funko/mermaid-568-02.jpeg": "5c3e9dc409973c99bf3aaafb4d1c193a5c21f98e",
     "/myfunkocollection/assets/image/funko/mermaid-568-03.jpeg": "0e2b7e340fadbf356971d9bf89ad605a1dfc1633",
     "/myfunkocollection/assets/image/funko/mermaid-568-04.jpeg": "7b105f364353414ffb0be580978a389e55d06e29",
-    "/myfunkocollection/assets/image/funko/model/model-box.jpg": "d272c54a8b1d0fc40b598c08f59002d6d56129a9",
+    "/myfunkocollection/assets/image/funko/model/model-box.jpeg": "d272c54a8b1d0fc40b598c08f59002d6d56129a9",
     "/myfunkocollection/assets/image/funko/model/model-funko.jpeg": "825720f73438b8dc2d214a70664351e1a7962d29",
     "/myfunkocollection/assets/image/funko/my-hero-academia-1011-01.jpeg": "8bc1272d21ebe2cf094d67b0fb9881d591583d90",
     "/myfunkocollection/assets/image/funko/my-hero-academia-1011-02.jpeg": "643ffe37e5e846cfb71583bf4e3b78cceb4cc3cf",
@@ -948,8 +948,8 @@
     "/myfunkocollection/assets/image/general/tadeu-funko.png": "b87a80494282dc8c8038d4aa63f656719e332919",
     "/myfunkocollection/assets/image/general/vivi-funko.png": "a5ecb40b310abf5d52ddac4feae8f9b0e754c6be",
     "/myfunkocollection/favicon.ico": "9ca3dc7d6f5c89f04f4a746223e75747491b76ad",
-    "/myfunkocollection/index.html": "61163455d370f7f4ccc76eab8b8ed310021d756c",
-    "/myfunkocollection/main.edb5d57840f21376.js": "30fbad4a866de2722c6fa6d7bc687039666c8717",
+    "/myfunkocollection/index.html": "31b19d1a673714c3928ef0fc7c899457a8503382",
+    "/myfunkocollection/main.e1abdc8b1cebdd84.js": "a4dcf4d9071ae316f66aa956716efa87261d609e",
     "/myfunkocollection/manifest.webmanifest": "7022966cc454712893ba95c005fa5512e4ca8694",
     "/myfunkocollection/polyfills.ed61ff4638425243.js": "dabdcc6417f782f31937be653591d86cfd8a13ad",
     "/myfunkocollection/runtime.f53e6d3efcd97360.js": "7c0467577c8afefd1eb2d9a664bc6be3549392fb",

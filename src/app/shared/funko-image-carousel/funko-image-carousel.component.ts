@@ -5,7 +5,6 @@ import {
   OnInit,
   SimpleChanges,
 } from '@angular/core';
-import { ImageModelBase64Enum } from '../../data/image-model-base-64.enum';
 
 @Component({
   selector: 'app-funko-image-carousel',
