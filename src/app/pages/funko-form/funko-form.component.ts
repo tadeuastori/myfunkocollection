@@ -143,8 +143,8 @@ export class FunkoFormComponent implements OnInit {
       imageName =
         this.form.value['collection']
           .replace('..?', '')
-          .replace(' - ', '')
-          .replace(' ', '-')
+          .replace(' - ', '-')
+          .replace(/ /g, '-')
           .toLowerCase() +
         '-' +
         this.form.value['number'] +
