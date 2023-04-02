@@ -141,10 +141,14 @@ export class FunkoFormComponent implements OnInit {
     let imageName;
     if (this.form.value['collection'] && this.form.value['number']) {
       imageName =
-        this.form.value['collection'].replace(' ', '_').toLowerCase() +
-        '_' +
+        this.form.value['collection']
+          .replace('..?', '')
+          .replace(' - ', '')
+          .replace(' ', '-')
+          .toLowerCase() +
+        '-' +
         this.form.value['number'] +
-        '_0' +
+        '-0' +
         (this.formImages.length + 1) +
         '.jpeg';
     }
