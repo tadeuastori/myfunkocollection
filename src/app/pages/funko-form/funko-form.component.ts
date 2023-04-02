@@ -2,12 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import {
-  ExclusiveList,
-  FeatureList,
-  SizeList,
-  StampList,
-} from '../../data/data-list';
 
 @Component({
   selector: 'app-funko-form',
@@ -16,16 +10,93 @@ import {
 })
 export class FunkoFormComponent implements OnInit {
   form: FormGroup;
-  stampList = StampList.sort();
-  featureList = FeatureList.sort();
-  exclusiveList = ExclusiveList.sort();
-  sizeList = SizeList.sort((a, b) => a - b);
   displayMessage: boolean = false;
+
+  funkoss = require('../../data/data-base-new.json');
+  stampDatalist: string[] = [];
+  exclusiveDatalist: string[] = [];
+  featureDatalist: string[] = [];
+  sizeDatalist: number[] = [];
+  collectionDatalist: string[] = [];
+  typeDatalist: string[] = [];
+  serialDatalist: string[] = [];
+  categoryDatalist: string[] = [];
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.initForm();
+    this.initDataList();
+  }
+
+  initDataList() {
+    let stringJson = JSON.stringify(this.funkoss);
+    const listFunko: any[] = JSON.parse(stringJson);
+
+    listFunko.forEach((funko) => {
+      if (funko['collection']) {
+        if (!this.collectionDatalist?.includes(funko['collection'])) {
+          this.collectionDatalist.push(funko['collection']);
+        }
+      }
+
+      if (funko['type']) {
+        if (!this.typeDatalist?.includes(funko['type'])) {
+          this.typeDatalist.push(funko['type']);
+        }
+      }
+
+      if (funko['serial']) {
+        if (!this.serialDatalist?.includes(funko['serial'])) {
+          this.serialDatalist.push(funko['serial']);
+        }
+      }
+
+      if (funko['size']) {
+        if (!this.sizeDatalist?.includes(funko['size'])) {
+          this.sizeDatalist.push(funko['size']);
+        }
+      }
+
+      if (funko['category']) {
+        if (!this.categoryDatalist?.includes(funko['category'])) {
+          this.categoryDatalist.push(funko['category']);
+        }
+      }
+
+      if (funko['stamps']) {
+        funko['stamps'].forEach((stamp) => {
+          if (!this.stampDatalist?.includes(stamp)) {
+            this.stampDatalist.push(stamp);
+          }
+        });
+      }
+
+      if (funko['exclusive']) {
+        funko['exclusive'].forEach((stamp) => {
+          if (!this.exclusiveDatalist?.includes(stamp)) {
+            this.exclusiveDatalist.push(stamp);
+          }
+        });
+      }
+
+      if (funko['features']) {
+        funko['features'].forEach((stamp) => {
+          if (!this.featureDatalist?.includes(stamp)) {
+            this.featureDatalist.push(stamp);
+          }
+        });
+      }
+    });
+
+    this.collectionDatalist = this.collectionDatalist?.sort();
+    this.stampDatalist = this.stampDatalist?.sort();
+    this.exclusiveDatalist = this.exclusiveDatalist?.sort();
+    this.featureDatalist = this.featureDatalist?.sort();
+    this.typeDatalist = this.typeDatalist?.sort();
+    this.serialDatalist = this.serialDatalist?.sort();
+    this.sizeDatalist = this.sizeDatalist?.sort((a, b) => a - b);
+    this.categoryDatalist = this.categoryDatalist.sort();
   }
 
   initForm() {
