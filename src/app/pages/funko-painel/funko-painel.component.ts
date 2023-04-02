@@ -1,4 +1,6 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-funko-painel',
@@ -11,6 +13,11 @@ export class FunkoPainelComponent implements OnInit, OnChanges {
   searchText: string = '';
   filteredCount = { count: 0 };
   total;
+  displayAddNewFunko: boolean = true;
+
+  currentEnvironment = environment;
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
     let stringJson = JSON.stringify(this.funkoss);
@@ -34,5 +41,9 @@ export class FunkoPainelComponent implements OnInit, OnChanges {
     // if (this.filteredCount.count < 50) {
     //   this.itemsArray = [this.filteredCount.count];
     // }
+  }
+
+  goToFormPage() {
+    this.router.navigate(['/add-funko']);
   }
 }
