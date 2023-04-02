@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FunkoDetailPainelComponent } from './shared/funko-detail-painel/funko-detail-painel.component';
 import { FunkoPainelComponent } from './pages/funko-painel/funko-painel.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageAddHomeScreenComponent } from './shared/message-add-home-screen/message-add-home-screen.component';
 // import { ServiceWorkerModule } from '@angular/service-worker';
 // import { environment } from '../environments/environment';
@@ -17,6 +17,7 @@ import { PaginationPipe } from './util/pagination.pipe';
 import { FunkoPainelPaginationComponent } from './shared/funko-painel-pagination/funko-painel-pagination.component';
 import { FunkoPainelItemsPerPageComponent } from './shared/funko-painel-items-per-page/funko-painel-items-per-page.component';
 import { FunkoImageCarouselComponent } from './shared/funko-image-carousel/funko-image-carousel.component';
+import { FunkoFormComponent } from './pages/funko-form/funko-form.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +33,15 @@ import { FunkoImageCarouselComponent } from './shared/funko-image-carousel/funko
     FunkoPainelPaginationComponent,
     FunkoPainelItemsPerPageComponent,
     FunkoImageCarouselComponent,
+    FunkoFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
+
     // ServiceWorkerModule.register('/ngsw-worker.js', {
     //   enabled: true,
     //   // Register the ServiceWorker as soon as the application is stable or after 30 seconds (whichever comes first).

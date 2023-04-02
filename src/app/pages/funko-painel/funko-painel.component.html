@@ -23,6 +23,20 @@
           <th scope="col">#</th>
           <th scope="col">Collection</th>
           <th scope="col">Name</th>
+          <th
+            scope="col"
+            class="d-md-flex justify-content-md-end"
+            *ngIf="displayAddNewFunko"
+          >
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              (click)="goToFormPage()"
+              *ngIf="currentEnvironment.production === false"
+            >
+              Add new Funko
+            </button>
+          </th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
@@ -46,9 +60,12 @@
           >
             <th scope="row">{{ item.number }}</th>
             <td>{{ item.collection }}</td>
-            <td>{{ item.name }}</td>
+            <td [attr.colspan]="displayAddNewFunko ? '2' : '1'">
+              {{ item.name }}
+            </td>
           </tr>
 
+          <!-- Details Modal -->
           <div
             class="modal fade modal-dialog-scrollable"
             id="funkoModal{{ item.number.replace(' ', '') + idx }}"
@@ -87,8 +104,9 @@
               </div>
             </div>
           </div>
+          <!-- Details Modal -->
 
-          <!-- <ng-container *ngFor="let img of item.image; index as idxImg"> -->
+          <!-- Image Modal -->
           <div
             class="modal fade"
             id="modalImg{{ item.number.replace(' ', '') + idx }}"
@@ -114,11 +132,6 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <!-- <img
-                      src="assets/image/funko/{{ img.name }}"
-                      class="img-fluid"
-                    /> -->
-
                   <app-funko-image-carousel
                     [funkoImages]="item.image"
                     [idFunko]="item.number.replace(' ', '') + idx"
@@ -128,13 +141,12 @@
               </div>
             </div>
           </div>
-          <!-- </ng-container> -->
-          <!-- modal -->
+          <!-- Image Modal -->
         </ng-container>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="3">
+          <td [attr.colspan]="displayAddNewFunko ? '4' : '3'">
             <app-funko-painel-pagination
               [funkosLength]="filteredCount.count"
               [itemsPerPage]="itemsPage.perPage"
