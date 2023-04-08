@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { BaseComponent } from '../base-component.component';
 
 @Component({
   selector: 'app-funko-form',
   templateUrl: './funko-form.component.html',
   styleUrls: ['./funko-form.component.less'],
 })
-export class FunkoFormComponent implements OnInit {
+export class FunkoFormComponent extends BaseComponent implements OnInit {
   form: FormGroup;
   displayMessage: boolean = false;
 
-  funkoss = require('../../data/data-base-new.json');
   stampDatalist: string[] = [];
   exclusiveDatalist: string[] = [];
   featureDatalist: string[] = [];
@@ -22,7 +22,9 @@ export class FunkoFormComponent implements OnInit {
   serialDatalist: string[] = [];
   categoryDatalist: string[] = [];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    super();
+  }
 
   ngOnInit(): void {
     this.initForm();
@@ -30,7 +32,7 @@ export class FunkoFormComponent implements OnInit {
   }
 
   initDataList() {
-    let stringJson = JSON.stringify(this.funkoss);
+    let stringJson = JSON.stringify(this.funkosDataDase);
     const listFunko: any[] = JSON.parse(stringJson);
 
     listFunko.forEach((funko) => {
@@ -137,8 +139,14 @@ export class FunkoFormComponent implements OnInit {
     return this.form.controls['image'] as FormArray;
   }
 
+  getControlValuebyIndex(index, Property) {
+    return (this.form.controls['image'] as FormArray).controls[index].value[
+      Property
+    ];
+  }
+
   addImage() {
-    let imageName;
+    let imageName = '';
     if (this.form.value['collection'] && this.form.value['number']) {
       imageName =
         this.form.value['collection']
@@ -148,12 +156,10 @@ export class FunkoFormComponent implements OnInit {
           .toLowerCase() +
         '-' +
         this.form.value['number'] +
-        '-0' +
+        (this.formImages.length + 1 < 10 ? '-0' : '-') +
         (this.formImages.length + 1) +
         '.jpeg';
     }
-
-    console.log(imageName);
 
     const imageForm = new FormGroup({
       name: new FormControl(imageName, Validators.required),
