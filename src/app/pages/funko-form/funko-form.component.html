@@ -390,6 +390,17 @@
                           placeholder="Image's name + extension"
                         />
                         <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                          id="button-addon3"
+                          (click)="
+                            copyToClipboard(getControlValuebyIndex(i, 'name'))
+                          "
+                          *ngIf="getControlValuebyIndex(i, 'name')"
+                        >
+                          Copy
+                        </button>
+                        <button
                           class="btn btn-outline-danger"
                           type="button"
                           id="button-addon2"
@@ -408,7 +419,11 @@
       </div>
     </div>
   </div>
-  <div class="alert alert-success" role="alert" *ngIf="displayMessage">
+  <div
+    class="alert alert-success text-center"
+    role="alert"
+    *ngIf="displayMessage"
+  >
     The <strong>JSON</strong> has been created and copied to Clipboard.
   </div>
   <div class="foot">
@@ -427,7 +442,7 @@
         class="btn btn-outline-primary"
         (click)="resetPage()"
       >
-        Create new Json
+        Add new Funko
       </button>
     </div>
     <div class="div-button-right">

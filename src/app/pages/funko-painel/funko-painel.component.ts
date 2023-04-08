@@ -1,15 +1,18 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';
+import { BaseComponent } from '../base-component.component';
 
 @Component({
   selector: 'app-funko-painel',
   templateUrl: './funko-painel.component.html',
   styleUrls: ['./funko-painel.component.less'],
 })
-export class FunkoPainelComponent implements OnInit, OnChanges {
+export class FunkoPainelComponent
+  extends BaseComponent
+  implements OnInit, OnChanges
+{
   funkoCollection: any;
-  funkoss = require('../../data/data-base-new.json');
   searchText: string = '';
   filteredCount = { count: 0 };
   total;
@@ -17,10 +20,12 @@ export class FunkoPainelComponent implements OnInit, OnChanges {
 
   currentEnvironment = environment;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    super();
+  }
 
   ngOnInit() {
-    let stringJson = JSON.stringify(this.funkoss);
+    let stringJson = JSON.stringify(this.funkosDataDase);
     const listFunko: any[] = JSON.parse(stringJson);
 
     this.funkoCollection = listFunko.sort((a, b) => {
