@@ -26,13 +26,14 @@
           <th
             scope="col"
             class="d-md-flex justify-content-md-end"
-            *ngIf="displayAddNewFunko"
+            *ngIf="
+              displayAddNewFunko && currentEnvironment.production === false
+            "
           >
             <button
               type="button"
               class="btn btn-primary btn-sm"
               (click)="goToFormPage()"
-              *ngIf="currentEnvironment.production === false"
             >
               Add new Funko
             </button>
@@ -60,7 +61,13 @@
           >
             <th scope="row">{{ item.number }}</th>
             <td>{{ item.collection }}</td>
-            <td [attr.colspan]="displayAddNewFunko ? '2' : '1'">
+            <td
+              [attr.colspan]="
+                displayAddNewFunko && currentEnvironment.production === false
+                  ? '2'
+                  : '1'
+              "
+            >
               {{ item.name }}
             </td>
           </tr>

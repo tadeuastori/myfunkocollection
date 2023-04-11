@@ -4607,5 +4607,42 @@
         "order": 4
       }
     ]
+  },
+  {
+    "uniqueId": "fbb27495d5584c40b8580187bb85e5e3",
+    "type": null,
+    "category": "Movies",
+    "collection": "The Lord of the Rings",
+    "number": "1295",
+    "name": "Smeagol",
+    "serial": "DRM221006",
+    "comment": null,
+    "pack": 1,
+    "size": 5,
+    "features": [],
+    "exclusive": ["Walmart"],
+    "stamps": ["Only at Walmart"],
+    "image": [
+      {
+        "name": "the-lord-of-the-rings-1295-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "the-lord-of-the-rings-1295-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "the-lord-of-the-rings-1295-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "the-lord-of-the-rings-1295-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
   }
 ]
