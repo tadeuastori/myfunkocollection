@@ -1,7 +1,7 @@
 [
   {
     "uniqueId": "ff0a3a12fc904a999f6033a80317c7f0",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "501",
@@ -41,7 +41,7 @@
   },
   {
     "uniqueId": "ebfa82a5ee1342dcbfa3d82af3cc5daf",
-    "type": null,
+    "type": "Pop",
     "category": "Icons",
     "collection": "Elvira 40 Years",
     "number": "68",
@@ -78,7 +78,7 @@
   },
   {
     "uniqueId": "c126b0d87cd44a309b4c5e100f9a0172",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "482",
@@ -115,7 +115,7 @@
   },
   {
     "uniqueId": "43971cb3354548d8ba7f5cbbb91de404",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Samurai Jack",
     "number": "1052",
@@ -206,7 +206,7 @@
   },
   {
     "uniqueId": "30b288b0649846c9a28ce84090647003",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Villains",
     "number": "1144",
@@ -243,7 +243,7 @@
   },
   {
     "uniqueId": "4378840a27024e70b0c1247c72123ffc",
-    "type": null,
+    "type": "Pop",
     "category": "HALO",
     "collection": "Halo",
     "number": "7",
@@ -280,7 +280,7 @@
   },
   {
     "uniqueId": "1f5bae90367b431e9d1ecd71581d1098",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball",
     "number": "517",
@@ -317,7 +317,7 @@
   },
   {
     "uniqueId": "ab4b1ad28a324172b59d22eba28dbb48",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Super",
     "number": "386",
@@ -354,7 +354,7 @@
   },
   {
     "uniqueId": "747420f6488c421886d7dc76649b19ce",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Super",
     "number": "668",
@@ -391,7 +391,7 @@
   },
   {
     "uniqueId": "9b2d50713a6e413db5a6be2030aaf48a",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "863",
@@ -428,7 +428,7 @@
   },
   {
     "uniqueId": "826dc12c2d7c43cdaf4b2bf70f32a0f6",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "706",
@@ -465,7 +465,7 @@
   },
   {
     "uniqueId": "3f8745c92584420a87239372e89d7b22",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "669",
@@ -502,7 +502,7 @@
   },
   {
     "uniqueId": "6f0b14203dfa493fa4fbf1ef831288f3",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "E.T. The Extra-Terrestrial",
     "number": "1253",
@@ -539,7 +539,7 @@
   },
   {
     "uniqueId": "26d6bc17209942a594af25d6d2ec62eb",
-    "type": null,
+    "type": "Pop",
     "category": "Television",
     "collection": "Dinosaurs",
     "number": "961",
@@ -576,7 +576,7 @@
   },
   {
     "uniqueId": "77004d915d434f74b585c7de374c50e4",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "409",
@@ -613,7 +613,7 @@
   },
   {
     "uniqueId": "9f64102635f3496a9ae0bf90e9b5d93b",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "860",
@@ -650,7 +650,7 @@
   },
   {
     "uniqueId": "6959644a188d48e1aa40027f0914996a",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "712",
@@ -687,7 +687,7 @@
   },
   {
     "uniqueId": "5fe9da9f090c4489833db793795f259f",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Super",
     "number": "533",
@@ -776,7 +776,7 @@
   },
   {
     "uniqueId": "d1d09d8569fb4972ae73bce3f50614da",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Disney",
     "number": "381",
@@ -813,7 +813,7 @@
   },
   {
     "uniqueId": "e1f87a138c1349dbaeed7ba908ded662",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Villains",
     "number": "1079",
@@ -850,7 +850,7 @@
   },
   {
     "uniqueId": "303004f91af24138bc181fde328d91a9",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Maleficent Mistress of Evil",
     "number": "627",
@@ -887,7 +887,7 @@
   },
   {
     "uniqueId": "dc79ba3081094970a365695b64dbdf9c",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "The Little Mermaid",
     "number": "568",
@@ -924,7 +924,7 @@
   },
   {
     "uniqueId": "3a81452d8ee94f5fa8ace2c33fd7537b",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Villains",
     "number": "1082",
@@ -961,7 +961,7 @@
   },
   {
     "uniqueId": "d721da6f54394b11a25471047215dfa4",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Villains",
     "number": "736",
@@ -998,7 +998,7 @@
   },
   {
     "uniqueId": "0dc87a589f7d44959abaa6fa5b235650",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Disney Store",
     "number": "45",
@@ -1035,7 +1035,7 @@
   },
   {
     "uniqueId": "15a4fe51757549a583c6ff1cdddb4fc9",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Wall-E",
     "number": "1120",
@@ -1072,7 +1072,7 @@
   },
   {
     "uniqueId": "168819689750452fb11a901ca27a8f13",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Wall-E",
     "number": "1116",
@@ -1109,7 +1109,7 @@
   },
   {
     "uniqueId": "f0eaaebf77c043928da66451481d388d",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Ghost Files YuYu Hakusho",
     "number": "547",
@@ -1146,7 +1146,7 @@
   },
   {
     "uniqueId": "67a0c7cf35fc461cbe1e65350fb456af",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Ghost Files YuYu Hakusho",
     "number": "545",
@@ -1183,7 +1183,7 @@
   },
   {
     "uniqueId": "ff164fe551014114bbd819d7435b5738",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Ghost Files YuYu Hakusho",
     "number": "543",
@@ -1220,7 +1220,7 @@
   },
   {
     "uniqueId": "3f26f3b88d9e450d8a9244e518aa3ad8",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "Space Jam",
     "number": "414",
@@ -1257,7 +1257,7 @@
   },
   {
     "uniqueId": "2ac208e61fee440b981439a45742c9ff",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Saint Saiya Knights of the Zodiac",
     "number": "810",
@@ -1294,7 +1294,7 @@
   },
   {
     "uniqueId": "c4a3f645403a4e86b185552926286138",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Saint Saiya Knights of the Zodiac",
     "number": "807",
@@ -1331,7 +1331,7 @@
   },
   {
     "uniqueId": "52c46f298b424715bb1f327a8c5c527d",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Saint Saiya Knights of the Zodiac",
     "number": "806",
@@ -1368,7 +1368,7 @@
   },
   {
     "uniqueId": "33d8b24928a14d5aa00fe37808b96fa5",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Saint Saiya Knights of the Zodiac",
     "number": "809",
@@ -1405,7 +1405,7 @@
   },
   {
     "uniqueId": "11d9b15a1efd452da5e4c85be42dd8b4",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Saint Saiya Knights of the Zodiac",
     "number": "808",
@@ -1442,7 +1442,7 @@
   },
   {
     "uniqueId": "4b81b252bf904153949cd8eca200b321",
-    "type": null,
+    "type": "Pop",
     "category": "Rocks",
     "collection": "Blink-182",
     "number": "",
@@ -1474,7 +1474,7 @@
   },
   {
     "uniqueId": "1b78ad47cb194c66b2abc693dd13ed88",
-    "type": null,
+    "type": "Pop",
     "category": "Games",
     "collection": "Pokemon",
     "number": "pack 4",
@@ -1506,7 +1506,7 @@
   },
   {
     "uniqueId": "995c338a56e84119b81395c92af7a387",
-    "type": null,
+    "type": "Pop",
     "category": "Moment",
     "collection": "Wall-E",
     "number": "1119",
@@ -1538,7 +1538,7 @@
   },
   {
     "uniqueId": "d4fe14b52cce4255ae7d34383f2e397f",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "702",
@@ -1575,7 +1575,7 @@
   },
   {
     "uniqueId": "aa190864c1644dffb0e7a68e788e4ac8",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "952",
@@ -1612,7 +1612,7 @@
   },
   {
     "uniqueId": "c3fa125980a946a2a905941726f76ed6",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "530",
@@ -1649,7 +1649,7 @@
   },
   {
     "uniqueId": "870f99d54c844e14a1edcee2edaedd46",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Super",
     "number": "314",
@@ -1686,7 +1686,7 @@
   },
   {
     "uniqueId": "dfbeb3833d16401c8cb3119cfc5d3fa5",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Super",
     "number": "318",
@@ -1723,7 +1723,7 @@
   },
   {
     "uniqueId": "f96578d6a07f4b1aa0a16930a741fa06",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "865",
@@ -1760,7 +1760,7 @@
   },
   {
     "uniqueId": "5160f01b799741f7ac9858d81de84cac",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "704",
@@ -1797,7 +1797,7 @@
   },
   {
     "uniqueId": "4a9efbec563d4891a40e607fef6cd52b",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "948",
@@ -1834,7 +1834,7 @@
   },
   {
     "uniqueId": "d707cb1a88694982b1520c2c0661b74d",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "111",
@@ -1871,7 +1871,7 @@
   },
   {
     "uniqueId": "5e07828f2210450394669025515e76f8",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "970",
@@ -1908,7 +1908,7 @@
   },
   {
     "uniqueId": "72a18d7ba0bf44ae92e99ec019d04cc6",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "1162",
@@ -1945,7 +1945,7 @@
   },
   {
     "uniqueId": "5088756e652e4bdfa53d8d80fd3ec74b",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "708",
@@ -1982,7 +1982,7 @@
   },
   {
     "uniqueId": "dd9b872480264a67973dd95595b8d61c",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Deadpool",
     "number": "779",
@@ -2019,7 +2019,7 @@
   },
   {
     "uniqueId": "3b571624ec8c44dbb2a0ce40ec752d26",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Avengers Endgame",
     "number": "578",
@@ -2056,7 +2056,7 @@
   },
   {
     "uniqueId": "00e605a4aec04f8c9ce4488c7f8354a7",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Disney",
     "number": "593",
@@ -2093,7 +2093,7 @@
   },
   {
     "uniqueId": "fad13a4770374915b948912b3b1e2f2b",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "What If...?",
     "number": "871",
@@ -2130,7 +2130,7 @@
   },
   {
     "uniqueId": "71b1bde792a740d48e255c3efff74126",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Doctor Strange Multiverse of Madness",
     "number": "1005",
@@ -2167,7 +2167,7 @@
   },
   {
     "uniqueId": "f5c93b4802b748239a97a45a997d4a9c",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Doctor Strange Multiverse of Madness",
     "number": "1000",
@@ -2204,7 +2204,7 @@
   },
   {
     "uniqueId": "f74d0ad6a4574ce890b7125988b2d0df",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Doctor Strange Multiverse of Madness",
     "number": "1032",
@@ -2241,7 +2241,7 @@
   },
   {
     "uniqueId": "79b3a522cd2e4d3aba793370accb62aa",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Avengers",
     "number": "985",
@@ -2281,7 +2281,7 @@
   },
   {
     "uniqueId": "9f3e64975e0f489489908b9285dfd281",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Loki",
     "number": "897",
@@ -2318,7 +2318,7 @@
   },
   {
     "uniqueId": "1a764344491f43e2872cf437ef06a109",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "What If...?",
     "number": "870",
@@ -2355,7 +2355,7 @@
   },
   {
     "uniqueId": "22cd167af5b04412b75d9f8d9adcf3f5",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "544",
@@ -2392,7 +2392,7 @@
   },
   {
     "uniqueId": "6c0250c250484fd2bdaa32ab693fef4e",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "1",
@@ -2429,7 +2429,7 @@
   },
   {
     "uniqueId": "4309020ba9d047a0b8ff27dba3299d83",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "513",
@@ -2466,7 +2466,7 @@
   },
   {
     "uniqueId": "1fabaa2009a840949eb0cb8b17ebc90b",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "370",
@@ -2503,7 +2503,7 @@
   },
   {
     "uniqueId": "f9836a7da29843c2bedaf347e7b3d661",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Avengers Endgame",
     "number": "580",
@@ -2540,7 +2540,7 @@
   },
   {
     "uniqueId": "d6b75d1a28db4895a8608e58278681dc",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Wandavision",
     "number": "824",
@@ -2577,7 +2577,7 @@
   },
   {
     "uniqueId": "dd1277d05d0f40139c708024c7b31013",
-    "type": null,
+    "type": "Pop",
     "category": "Games",
     "collection": "Pokemon",
     "number": "781",
@@ -2614,7 +2614,7 @@
   },
   {
     "uniqueId": "43d06f67a53841e997e1197da013c994",
-    "type": null,
+    "type": "Pop",
     "category": "Games",
     "collection": "Pokemon",
     "number": "850",
@@ -2651,7 +2651,7 @@
   },
   {
     "uniqueId": "a980e3fa3efe487c865d662a084d4c6b",
-    "type": null,
+    "type": "Pop",
     "category": "Games",
     "collection": "Pokemon",
     "number": "643",
@@ -2688,7 +2688,7 @@
   },
   {
     "uniqueId": "d4332b00e9864d889caa93bed6c0ee78",
-    "type": null,
+    "type": "Pop",
     "category": "Games",
     "collection": "Pokemon",
     "number": "453",
@@ -2725,7 +2725,7 @@
   },
   {
     "uniqueId": "ac9f400f0f04417ca5f4f4dde63abc5f",
-    "type": null,
+    "type": "Pop",
     "category": "Games",
     "collection": "Pokemon",
     "number": "843",
@@ -2762,7 +2762,7 @@
   },
   {
     "uniqueId": "03ab1fa4e6d1455e94a83b133316c930",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Wall-E",
     "number": "1115",
@@ -2799,7 +2799,7 @@
   },
   {
     "uniqueId": "07d7c3b688464370b00948bd83971a2d",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "White Men Can`t Jump",
     "number": "977",
@@ -2836,7 +2836,7 @@
   },
   {
     "uniqueId": "7bd9abd0860c4ee0b29fa8090a538335",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "White Men Can`t Jump",
     "number": "976",
@@ -2873,7 +2873,7 @@
   },
   {
     "uniqueId": "2249897232de4a3c8bc0eabc9c6398ad",
-    "type": null,
+    "type": "Pop",
     "category": "Heroes",
     "collection": "DC Super Heroes",
     "number": "355",
@@ -2910,7 +2910,7 @@
   },
   {
     "uniqueId": "fe880a37c4704ec499abed1d67826f60",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "Austin Powers",
     "number": "644",
@@ -2947,7 +2947,7 @@
   },
   {
     "uniqueId": "adaf2700f04741ca966682b4f577e3f5",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Matrix",
     "number": "1172",
@@ -2984,7 +2984,7 @@
   },
   {
     "uniqueId": "1d7e4b8c8cea4ff7aa53bbaef9169929",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Matrix",
     "number": "1173",
@@ -3021,7 +3021,7 @@
   },
   {
     "uniqueId": "8eaa970010b645e3b56db4a88f88b829",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "Back to the Future",
     "number": "959",
@@ -3058,7 +3058,7 @@
   },
   {
     "uniqueId": "5609d7d7bc934e10b70b0fdf4de62fe5",
-    "type": null,
+    "type": "Pop",
     "category": "Television",
     "collection": "Star Trek",
     "number": "1139",
@@ -3095,7 +3095,7 @@
   },
   {
     "uniqueId": "0ecaf8a526f84c139c215fe98b5be5fd",
-    "type": null,
+    "type": "Pop",
     "category": "Television",
     "collection": "The Witcher",
     "number": "1192",
@@ -3132,7 +3132,7 @@
   },
   {
     "uniqueId": "7abacbbbe7334cfaa3c425cc87e0d017",
-    "type": null,
+    "type": "Pop",
     "category": "With Purpose",
     "collection": "Star Trek",
     "number": "SE",
@@ -3169,7 +3169,7 @@
   },
   {
     "uniqueId": "ee2f32516c334f6cbc87034a90a7bf65",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "My Hero Academia",
     "number": "647",
@@ -3206,7 +3206,7 @@
   },
   {
     "uniqueId": "d71b51480d844aa78960dff3fce22118",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "My Hero Academia",
     "number": "1011",
@@ -3243,7 +3243,7 @@
   },
   {
     "uniqueId": "8487b73a698f4bc1a4f810eaaee1babb",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "My Hero Academia",
     "number": "789",
@@ -3280,7 +3280,7 @@
   },
   {
     "uniqueId": "431187f2613445e69900afe237766cb7",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "My Hero Academia",
     "number": "784",
@@ -3317,7 +3317,7 @@
   },
   {
     "uniqueId": "7b213e997ff145c0810cc0e267994a1c",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Avatar The Last Airbender",
     "number": "540",
@@ -3354,7 +3354,7 @@
   },
   {
     "uniqueId": "0c74d7397aba44e1b0cd50ee0b143c11",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Inuyasha",
     "number": "767",
@@ -3391,7 +3391,7 @@
   },
   {
     "uniqueId": "73a52338492c44589e44fd82cc08d4c8",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Inuyasha",
     "number": "769",
@@ -3428,7 +3428,7 @@
   },
   {
     "uniqueId": "8a283da62e294b608fac3791633fbb59",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Avatar The Last Airbender",
     "number": "1130",
@@ -3465,7 +3465,7 @@
   },
   {
     "uniqueId": "f3b40e8710bd43f39a67c69dbdaebda3",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Goonies",
     "number": "1066",
@@ -3502,7 +3502,7 @@
   },
   {
     "uniqueId": "70146c59f09e4bceba912f91301530d0",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Goonies",
     "number": "1065",
@@ -3539,7 +3539,7 @@
   },
   {
     "uniqueId": "7cae6ee7e4c04024a96dd22b4aa5a81b",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Avatar The Last Airbender",
     "number": "534",
@@ -3576,7 +3576,7 @@
   },
   {
     "uniqueId": "5857d530f7a74f7d848797c6da50dd70",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Inuyasha",
     "number": "938",
@@ -3613,7 +3613,7 @@
   },
   {
     "uniqueId": "fc2568ea08e9435eae9f32517d5eec98",
-    "type": null,
+    "type": "Pop",
     "category": "Rocks",
     "collection": "Slipknot",
     "number": "177",
@@ -3650,7 +3650,7 @@
   },
   {
     "uniqueId": "2071ae5670714b0f8eef4c789f4e0e1f",
-    "type": null,
+    "type": "Pop",
     "category": "Rocks",
     "collection": "Slipknot",
     "number": "179",
@@ -3687,7 +3687,7 @@
   },
   {
     "uniqueId": "ac718639441e4dadb194dac5c057665e",
-    "type": null,
+    "type": "Pop",
     "category": "Rocks",
     "collection": "Slipknot",
     "number": "178",
@@ -3724,7 +3724,7 @@
   },
   {
     "uniqueId": "c449a81460624c3b837e528d8db5bfed",
-    "type": null,
+    "type": "Pop",
     "category": "Rocks",
     "collection": "Queen",
     "number": "184",
@@ -3761,7 +3761,7 @@
   },
   {
     "uniqueId": "20f82959baf84419abcc34f6b9b61eb4",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Yu-Gi-Oh!",
     "number": "755",
@@ -3798,7 +3798,7 @@
   },
   {
     "uniqueId": "224300513cd94369b0aa55274ef2ba9e",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Iron Man 2",
     "number": "905",
@@ -3830,7 +3830,7 @@
   },
   {
     "uniqueId": "94d9dbacc3e74f2dacbdca462f66caa1",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "Dumb and Dumber",
     "number": "1039",
@@ -3867,7 +3867,7 @@
   },
   {
     "uniqueId": "a583f35f59e846029d332f0321e980f7",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "365",
@@ -3904,7 +3904,7 @@
   },
   {
     "uniqueId": "9769e56206d84f97918e67f805719d13",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "859",
@@ -3941,7 +3941,7 @@
   },
   {
     "uniqueId": "57ba1b134d324db098b2b3495a0902fd",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Villains",
     "number": "1081",
@@ -3978,7 +3978,7 @@
   },
   {
     "uniqueId": "c603fa8d57b94b06a2247b9ccf37e608",
-    "type": null,
+    "type": "Pop",
     "category": "Royals",
     "collection": "The Royal Family",
     "number": "01",
@@ -4015,7 +4015,7 @@
   },
   {
     "uniqueId": "98e84cd63b324c4ea545b0f15b557e18",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "Dumb and Dumber",
     "number": "1042",
@@ -4052,7 +4052,7 @@
   },
   {
     "uniqueId": "1b1174ad301743b0b51a890d459ba769",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Marvel",
     "number": "1057",
@@ -4089,7 +4089,7 @@
   },
   {
     "uniqueId": "63dc1e79ca7a4cc1a46a5dec03ce8c7c",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "Halloween",
     "number": "1156",
@@ -4126,7 +4126,7 @@
   },
   {
     "uniqueId": "dbf362343dbf4957a1bf5f74be3b489b",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Star Wars",
     "number": "402",
@@ -4163,7 +4163,7 @@
   },
   {
     "uniqueId": "9d0660bbfa144dc98815cd63be10a9bf",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Spider-Man - No Way Home",
     "number": "1162",
@@ -4200,7 +4200,7 @@
   },
   {
     "uniqueId": "3cbdda271d3a4092b763a3de5406be19",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "What If...?",
     "number": "969",
@@ -4237,7 +4237,7 @@
   },
   {
     "uniqueId": "0400fafc68674596a678bd9869c1fae5",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Moon Knight",
     "number": "1047",
@@ -4274,7 +4274,7 @@
   },
   {
     "uniqueId": "20119f6c766c487291e0014e2451bade",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "South Park",
     "number": "39",
@@ -4311,7 +4311,7 @@
   },
   {
     "uniqueId": "e4fadaffa80447888b8521c64bd8bab2",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "South Park",
     "number": "37",
@@ -4348,7 +4348,7 @@
   },
   {
     "uniqueId": "67108031699b41068e89220cc44abac2",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "Lightyear",
     "number": "1214",
@@ -4385,7 +4385,7 @@
   },
   {
     "uniqueId": "9fbe481406fb4a39a22149c54b696f5c",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Avatar The Last Airbender",
     "number": "537",
@@ -4422,7 +4422,7 @@
   },
   {
     "uniqueId": "4dc919c5e3f1436298bab8c517542cd9",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Super",
     "number": "1281",
@@ -4459,7 +4459,7 @@
   },
   {
     "uniqueId": "88cc684b71ac442192ea26b04acbc59b",
-    "type": null,
+    "type": "Pop",
     "category": "Animation",
     "collection": "Dragon Ball Z",
     "number": "858",
@@ -4499,7 +4499,7 @@
   },
   {
     "uniqueId": "551e679648634278917993149dcc19a3",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Lord of the Rings",
     "number": "443",
@@ -4536,7 +4536,7 @@
   },
   {
     "uniqueId": "4c03b6b21b8e44bebca762560d65ed94",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Lord of the Rings",
     "number": "629",
@@ -4610,7 +4610,7 @@
   },
   {
     "uniqueId": "fbb27495d5584c40b8580187bb85e5e3",
-    "type": null,
+    "type": "Pop",
     "category": "Movies",
     "collection": "The Lord of the Rings",
     "number": "1295",
@@ -4640,6 +4640,490 @@
       },
       {
         "name": "the-lord-of-the-rings-1295-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "bddf3cac371e47b39eb2d6e6ae7eb947",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Inuyasha",
+    "number": "1296",
+    "name": "Rin",
+    "serial": "FM 230308",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "inuyasha-1296-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "inuyasha-1296-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "inuyasha-1296-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "inuyasha-1296-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "5d52d0a91e044f8993c64b5105cf0c1d",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Dragon Ball Super",
+    "number": "1280",
+    "name": "Jiren",
+    "serial": "DRM221201",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dragon-ball-super-1280-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "dragon-ball-super-1280-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "dragon-ball-super-1280-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "dragon-ball-super-1280-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "4584639f448340719a2ff6f92094a48c",
+    "type": "Pop",
+    "category": "Heroes",
+    "collection": "The Dark Knight Trilogy",
+    "number": "36",
+    "name": "The Joker",
+    "serial": "FM 230214",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "the-dark-knight-trilogy-36-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "the-dark-knight-trilogy-36-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "the-dark-knight-trilogy-36-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "the-dark-knight-trilogy-36-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "1eed10195e8b43b2b2ef5c52985bb43f",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Inuyasha",
+    "number": "1298",
+    "name": "Kikyo",
+    "serial": "FM 230308",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "inuyasha-1298-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "inuyasha-1298-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "inuyasha-1298-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "inuyasha-1298-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "675797708b744eb3bf111439bf934b3b",
+    "type": "Pop",
+    "category": "Movies",
+    "collection": "The Lord of the Rings",
+    "number": "628",
+    "name": "Legolas",
+    "serial": "DRM230202",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "the-lord-of-the-rings-628-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "the-lord-of-the-rings-628-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "the-lord-of-the-rings-628-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "the-lord-of-the-rings-628-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "f2a26c1218224dfba38466ac9f28ebee",
+    "type": "Pop",
+    "category": null,
+    "collection": "She Hulk",
+    "number": "1131",
+    "name": "Wong",
+    "serial": "FAC-053571-22251",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "she-hulk-1131-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "she-hulk-1131-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "she-hulk-1131-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "she-hulk-1131-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "a5204aa71c6941b596f3dba429455f5d",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Inuyasha",
+    "number": "1297",
+    "name": "Jaken",
+    "serial": "FM 230308",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "inuyasha-1297-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "inuyasha-1297-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "inuyasha-1297-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "inuyasha-1297-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "20f867c1841e4253a6e3c8a7d16e7d07",
+    "type": "Pop",
+    "category": null,
+    "collection": "South Park",
+    "number": "38",
+    "name": "Boyband Kenny",
+    "serial": "DRM220915",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "south-park-38-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "south-park-38-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "south-park-38-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "south-park-38-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "d4bf1e4428244b56864f57058b2367fa",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Inuyasha",
+    "number": "1299",
+    "name": "Naraku",
+    "serial": "FM 230308",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "inuyasha-1299-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "inuyasha-1299-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "inuyasha-1299-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "inuyasha-1299-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "7bbe6b7840794c29b922948bf9c6b9d1",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Dragon Ball Z",
+    "number": "12",
+    "name": "Frieza (Final Form)",
+    "serial": "TTC230222",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dragon-ball-z-12-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "dragon-ball-z-12-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "dragon-ball-z-12-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "dragon-ball-z-12-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "ab890fbc42824ed487963f15f1c4e0e1",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Dragon Ball Super",
+    "number": "1279",
+    "name": "Super Saiyan Rosé Goku Black",
+    "serial": "DRM230601",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": ["Glows in the Dark"],
+    "exclusive": ["Entertainment Earth"],
+    "stamps": [
+      "Entertainment Earth Exclusive Limited Edition",
+      "Glows in the Dark"
+    ],
+    "image": [
+      {
+        "name": "dragon-ball-super-1279-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "dragon-ball-super-1279-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "dragon-ball-super-1279-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "dragon-ball-super-1279-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "b6e2a0d4d5754cf09ec918cc94e05092",
+    "type": "Pop",
+    "category": "Movies",
+    "collection": "The Lord of the Rings",
+    "number": "444",
+    "name": "Frodo Baggins",
+    "serial": "DRM220303",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "the-lord-of-the-rings-444-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "the-lord-of-the-rings-444-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "the-lord-of-the-rings-444-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "the-lord-of-the-rings-444-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "bc4f55f46b324c55a8a032e964c8af1d",
+    "type": "Pop",
+    "category": "Movies",
+    "collection": "The Lord of the Rings",
+    "number": "445",
+    "name": "Samwise Gamgee",
+    "serial": "DRM220526",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": ["Glows in the Dark"],
+    "exclusive": [],
+    "stamps": ["Glows in the Dark"],
+    "image": [
+      {
+        "name": "the-lord-of-the-rings-445-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "the-lord-of-the-rings-445-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "the-lord-of-the-rings-445-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "the-lord-of-the-rings-445-04.jpeg",
         "base64": null,
         "order": 4
       }
