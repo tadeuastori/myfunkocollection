@@ -2,7 +2,7 @@
   {},
   {
     "uniqueId" = "",
-    "type": null,
+    "type": "Pop",
     "category": null,
     "collection": "",
     "number": "",
