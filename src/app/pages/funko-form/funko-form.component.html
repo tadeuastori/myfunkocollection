@@ -8,7 +8,8 @@
     <div class="title">My Funko Collection</div>
   </div>
   <div class="title-section">
-    <label><< Adding new Funko to collection >></label>
+    <label *ngIf="!pageEditMode">Adding new Funko to collection</label>
+    <label *ngIf="pageEditMode">Editing Funko</label>
   </div>
   <div class="content">
     <div class="funko-panel">
@@ -424,7 +425,7 @@
     role="alert"
     *ngIf="displayMessage"
   >
-    The <strong>JSON</strong> has been created and copied to Clipboard.
+    The <strong>JSON</strong> has been generated and copied to Clipboard.
   </div>
   <div class="foot">
     <div class="div-button-left">
@@ -436,7 +437,7 @@
         Back to list page
       </button>
     </div>
-    <div class="div-button-center">
+    <div class="div-button-center" *ngIf="!pageEditMode">
       <button
         type="button"
         class="btn btn-outline-primary"

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BaseComponent } from '../base-component.component';
+import { switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-funko-form',
@@ -12,6 +13,9 @@ import { BaseComponent } from '../base-component.component';
 export class FunkoFormComponent extends BaseComponent implements OnInit {
   form: FormGroup;
   displayMessage: boolean = false;
+  item: string;
+  loadedFunko: any;
+  pageEditMode: boolean = false;
 
   stampDatalist: string[] = [];
   exclusiveDatalist: string[] = [];
@@ -22,13 +26,19 @@ export class FunkoFormComponent extends BaseComponent implements OnInit {
   serialDatalist: string[] = [];
   categoryDatalist: string[] = [];
 
-  constructor(private router: Router) {
+  constructor(private route: ActivatedRoute, private router: Router) {
     super();
   }
 
   ngOnInit(): void {
     this.initForm();
     this.initDataList();
+    this.getParameter();
+
+    if (this.item && this.item != 'new') {
+      this.loadingItem();
+      this.pageEditMode = true;
+    }
   }
 
   initDataList() {
@@ -122,12 +132,62 @@ export class FunkoFormComponent extends BaseComponent implements OnInit {
     });
   }
 
+  getParameter() {
+    this.route.queryParams.subscribe((params) => {
+      this.item = params['item'];
+    });
+  }
+
+  loadingItem() {
+    let stringJson = JSON.stringify(this.funkosDataDase);
+    const listFunko: any[] = JSON.parse(stringJson);
+
+    this.loadedFunko = listFunko.find(
+      (filter) => filter.uniqueId === this.item
+    );
+
+    this.setValueToForm('uniqueId');
+
+    this.setValueToForm('name');
+    this.setValueToForm('type');
+    this.setValueToForm('category');
+    this.setValueToForm('number');
+
+    this.setValueToForm('collection');
+
+    this.setValueToForm('pack');
+    this.setValueToForm('size');
+    this.setValueToForm('serial');
+
+    this.setValueToForm('comment');
+
+    this.loadedFunko['exclusive'].forEach((element) => {
+      this.addItemFormArray('exclusive', element);
+    });
+
+    this.loadedFunko['features'].forEach((element) => {
+      this.addItemFormArray('features', element);
+    });
+
+    this.loadedFunko['stamps'].forEach((element) => {
+      this.addItemFormArray('stamps', element);
+    });
+
+    this.loadedFunko['image'].forEach((element) => {
+      this.addImage(element.name);
+    });
+  }
+
+  setValueToForm(field: string) {
+    this.form.controls[field].patchValue(this.loadedFunko[field]);
+  }
+
   getFormArray(name: string) {
     return this.form.controls[name] as FormArray;
   }
 
-  addItemFormArray(name: string) {
-    const newItem = new FormControl(null, null);
+  addItemFormArray(name: string, value: any = null) {
+    const newItem = new FormControl(value ? value : null, null);
     this.getFormArray(name).push(newItem);
   }
 
@@ -145,9 +205,12 @@ export class FunkoFormComponent extends BaseComponent implements OnInit {
     ];
   }
 
-  addImage() {
+  addImage(value: any = null) {
     let imageName = '';
-    if (this.form.value['collection'] && this.form.value['number']) {
+
+    if (value) {
+      imageName = value;
+    } else if (this.form.value['collection'] && this.form.value['number']) {
       imageName =
         this.form.value['collection']
           .replace('..?', '')
@@ -179,15 +242,20 @@ export class FunkoFormComponent extends BaseComponent implements OnInit {
 
   resetPage() {
     this.displayMessage = false;
-
     this.initForm();
   }
 
   gerarJson() {
-    const jsonString = JSON.stringify(this.form.value, null, 2);
+    const jsonString = JSON.stringify(
+      this.pageEditMode
+        ? this.updatedItem(this.form.value)
+        : this.addedItem(this.form.value),
+      null,
+      2
+    );
+
     this.copyToClipboard(jsonString);
     this.displayMessage = true;
-    console.log(jsonString);
   }
 
   copyToClipboard(text: string) {
@@ -197,5 +265,27 @@ export class FunkoFormComponent extends BaseComponent implements OnInit {
     textarea.select();
     document.execCommand('copy');
     document.body.removeChild(textarea);
+  }
+
+  updatedItem(newItem) {
+    let stringJson = JSON.stringify(this.funkosDataDase);
+    const listFunko: any[] = JSON.parse(stringJson);
+
+    var deleteFunko = listFunko.find(
+      (filter) => filter.uniqueId === newItem.uniqueId
+    );
+
+    let index = listFunko.indexOf(deleteFunko);
+    listFunko[index] = newItem;
+
+    return listFunko;
+  }
+
+  addedItem(newItem) {
+    let stringJson = JSON.stringify(this.funkosDataDase);
+    const listFunko: any[] = JSON.parse(stringJson);
+    listFunko.push(newItem);
+
+    return listFunko;
   }
 }

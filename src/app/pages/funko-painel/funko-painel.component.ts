@@ -49,6 +49,10 @@ export class FunkoPainelComponent
   }
 
   goToFormPage() {
-    this.router.navigate(['/add-funko']);
+    this.router.navigate(['/add-funko'], { queryParams: { item: 'new' } });
+  }
+
+  goToEditPage(itemId: string) {
+    this.router.navigate(['/add-funko'], { queryParams: { item: itemId } });
   }
 }

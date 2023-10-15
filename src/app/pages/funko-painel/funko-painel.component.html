@@ -101,6 +101,18 @@
                 </div>
                 <div class="modal-footer">
                   <button
+                    *ngIf="
+                      displayAddNewFunko &&
+                      currentEnvironment.production === false
+                    "
+                    type="button"
+                    class="btn btn-outline-success btn-sm"
+                    data-bs-dismiss="modal"
+                    (click)="goToEditPage(item.uniqueId)"
+                  >
+                    Edit Funko
+                  </button>
+                  <button
                     type="button"
                     class="btn btn-primary"
                     data-bs-dismiss="modal"
