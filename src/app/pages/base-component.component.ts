@@ -14,4 +14,9 @@ export abstract class BaseComponent implements OnDestroy {
     this.destroy$.next();
     this.destroy$.complete();
   }
+
+  public loadFunkoList(): any[] {
+    let stringJson = JSON.stringify(this.funkosDataDase);
+    return JSON.parse(stringJson);
+  }
 }

@@ -42,8 +42,7 @@ export class FunkoFormComponent extends BaseComponent implements OnInit {
   }
 
   initDataList() {
-    let stringJson = JSON.stringify(this.funkosDataDase);
-    const listFunko: any[] = JSON.parse(stringJson);
+    const listFunko = this.loadFunkoList();
 
     listFunko.forEach((funko) => {
       if (funko['collection']) {
