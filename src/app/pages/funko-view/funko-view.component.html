@@ -1,0 +1,66 @@
+<div class="page">
+  <div class="top">
+    <div class="funko-we">
+      <img class="tadeu" src="assets/image/general/tadeu-funko.png" />
+      <img src="assets/image/general/maple-funko.png" />
+      <img class="vivi" src="assets/image/general/vivi-funko.png" />
+    </div>
+    <div class="title">My Funko Collection</div>
+  </div>
+  <div class="content">
+    <div class="funko-panel">
+      <div class="funko-form">
+        <app-funko-detail-painel
+          [funkoDetails]="loadedFunko"
+          [idFunko]="loadedFunko.uniqueId"
+        ></app-funko-detail-painel>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="div-button-center">
+      <button
+        type="button"
+        class="btn btn-outline-danger"
+        (click)="voltarPagina()"
+      >
+        Back to list page
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Image Modal -->
+<div
+  class="modal fade"
+  id="modalImg{{ loadedFunko.uniqueId }}"
+  aria-hidden="true"
+  aria-labelledby="ModalLabel"
+  tabindex="-1"
+  data-bs-backdrop="static"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalLabel">
+          {{ loadedFunko.name }}
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-toggle="modal"
+          aria-label="Close"
+          attr.data-bs-target="#modalImg{{ loadedFunko.uniqueId }}"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <app-funko-image-carousel
+          [funkoImages]="loadedFunko.image"
+          [uniqueId]="loadedFunko.uniqueId"
+          [fromPage]="'painel'"
+        ></app-funko-image-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Image Modal -->

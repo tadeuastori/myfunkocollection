@@ -42,11 +42,7 @@ export class FunkoPainelComponent
     });
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    // if (this.filteredCount.count < 50) {
-    //   this.itemsArray = [this.filteredCount.count];
-    // }
-  }
+  ngOnChanges(changes: SimpleChanges): void {}
 
   goToFormPage() {
     this.router.navigate(['/add-funko'], { queryParams: { item: 'new' } });
@@ -54,5 +50,9 @@ export class FunkoPainelComponent
 
   goToEditPage(itemId: string) {
     this.router.navigate(['/add-funko'], { queryParams: { item: itemId } });
+  }
+
+  goToViewPage(itemId: string) {
+    this.router.navigate(['/view-funko'], { queryParams: { item: itemId } });
   }
 }

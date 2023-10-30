@@ -18,6 +18,7 @@ import { FunkoPainelPaginationComponent } from './shared/funko-painel-pagination
 import { FunkoPainelItemsPerPageComponent } from './shared/funko-painel-items-per-page/funko-painel-items-per-page.component';
 import { FunkoImageCarouselComponent } from './shared/funko-image-carousel/funko-image-carousel.component';
 import { FunkoFormComponent } from './pages/funko-form/funko-form.component';
+import { FunkoViewComponent } from './pages/funko-view/funko-view.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FunkoFormComponent } from './pages/funko-form/funko-form.component';
     FunkoPainelItemsPerPageComponent,
     FunkoImageCarouselComponent,
     FunkoFormComponent,
+    FunkoViewComponent,
   ],
   imports: [
     BrowserModule,

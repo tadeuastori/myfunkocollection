@@ -13,7 +13,7 @@ import {
 })
 export class FunkoImageCarouselComponent implements OnInit, OnChanges {
   @Input() funkoImages: any;
-  @Input() idFunko: number;
+  @Input() uniqueId: number;
   @Input() fromPage: string;
 
   useBase64: boolean = false;
