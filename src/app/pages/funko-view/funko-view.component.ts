@@ -36,4 +36,8 @@ export class FunkoViewComponent extends BaseComponent implements OnInit {
   voltarPagina() {
     this.router.navigate(['']);
   }
+
+  goToEditPage(itemId: string) {
+    this.router.navigate(['/edit-funko'], { queryParams: { item: itemId } });
+  }
 }

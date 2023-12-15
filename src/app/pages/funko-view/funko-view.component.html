@@ -18,13 +18,22 @@
     </div>
   </div>
   <div class="foot">
-    <div class="div-button-center">
+    <div class="div-button-left">
       <button
         type="button"
         class="btn btn-outline-danger"
         (click)="voltarPagina()"
       >
         Back to list page
+      </button>
+    </div>
+    <div class="div-button-right">
+      <button
+        type="button"
+        class="btn btn-outline-success"
+        (click)="goToEditPage(loadedFunko.uniqueId)"
+      >
+        Edit Information
       </button>
     </div>
   </div>
