@@ -5942,5 +5942,79 @@
         "order": 4
       }
     ]
+  },
+  {
+    "uniqueId": "b6ccdace24e441cd872cbf2217c5a18f",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Dragon Ball Z",
+    "number": "10",
+    "name": "Vegeta",
+    "serial": "TTC230703",
+    "comment": null,
+    "pack": 1,
+    "size": 6,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dragon-ball-z-10-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "dragon-ball-z-10-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "dragon-ball-z-10-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "dragon-ball-z-10-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
+  },
+  {
+    "uniqueId": "1d0b097712654cd6ab03626b40d92215",
+    "type": "Pop",
+    "category": "Animation",
+    "collection": "Dragon Ball Z",
+    "number": "106",
+    "name": "Gohan",
+    "serial": "TTC230808",
+    "comment": null,
+    "pack": 1,
+    "size": 4,
+    "features": [],
+    "exclusive": [],
+    "stamps": [],
+    "image": [
+      {
+        "name": "dragon-ball-z-106-01.jpeg",
+        "base64": null,
+        "order": 1
+      },
+      {
+        "name": "dragon-ball-z-106-02.jpeg",
+        "base64": null,
+        "order": 2
+      },
+      {
+        "name": "dragon-ball-z-106-03.jpeg",
+        "base64": null,
+        "order": 3
+      },
+      {
+        "name": "dragon-ball-z-106-04.jpeg",
+        "base64": null,
+        "order": 4
+      }
+    ]
   }
 ]
